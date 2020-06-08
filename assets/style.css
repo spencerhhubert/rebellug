@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
+
+:root {
+    --default-orange: #efa93b;
+    --default-dark-gray: #252122;
+    --default-light-gray: #5d5d5d;
+    --default-lighter-gray: rgb(231, 231, 231);         
+    --default-movement-action: all 0.3s ease 0s;
+    --default-movement: -3.5px;
+    --default-border-width: 1px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro';
+    /* background-color: var(--default-dark-gray); */
+    background: url(../images/black-greeble-background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+* {
+    transition: var(--default-movement-action);
+}
+
+p, h1, h2, h3, h3, h5 {
+    color: var(--default-dark-gray);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    flex-direction: column;
+    max-width: 1000px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section {
+    flex-direction: column;
+}
+
+.item {
+    display: inline;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.header {
+    width: 100% !important;
+    max-width: 100% !important;
+    background: url(../images/white-greeble-background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.footer {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.footer p {
+    color: #858484;
+    background-color: #2c2929;
+    padding: 10px;
+}
+
+.content {
+    background-color: #f7f7f7;
+}
+
+.content .box {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    transform: translateY(var(--default-movement));
+}
+
+button {
+    padding: 12px 24px;
+    background: none;
+    border-color: var(--default-orange);
+    border-width: var(--default-border-width);
+    border-style: solid;
+    font-weight: bold;
+}
+
+.nav button * {
+    color: var(--default-light-gray);
+}
+
+.nav button {
+    border-width: 0px;
+    margin: 0 5px;
+}
+
+ul.nav {
+    margin: 0;
+    padding: 0;
+}
+
+button * {
+    margin: 0px;
+}
+
+button:hover {
+    background-color: var(--default-orange);
+    transform: translateY(var(--default-movement));
+    cursor: pointer;
+}
+
+button:hover * {
+    color: white;
+}
+
+.active button {
+    background-color: var(--default-orange);
+}
+
+.active button * {
+    color: white;
+}
+
+.social .fab {
+    font-size: 2em;
+    color: var(--default-dark-gray);
+}
+
+.social a:hover .fab {
+    color: var(--default-orange);
+}
+
+.social .container {
+    align-self: center;
+    margin: 0 10px;
+}
+
+.social {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 110%;
+}
