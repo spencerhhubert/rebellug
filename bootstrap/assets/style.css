@@ -16,6 +16,10 @@ body {
     background: url(../images/black-greeble-background.jpg);
 }
 
+.container {
+    padding: 0;
+}
+
 a {
     color: var(--default-orange);
 }
@@ -24,11 +28,11 @@ a:hover {
     color: var(--default-orange);
 }
 
-a:hover img, a:hover .fa, a:hover .fab, a:hover p, a:hover h1 {
+a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1 {
     transform: translateY(var(--default-movement));
 }
 
-.fa, .fab {
+.fa, .fab, .fas {
     color: orange;
     font-size: 30px;
 }
@@ -90,9 +94,18 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover p, a:hover h1 {
     margin-top: 10px;
 }
 
+.footer .copyright {
+    color: gray;
+}
+
+.footer .fa, .footer .fas, .footer .fab {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .social .fa, .social .fab {
+    .social .fa, .social .fab, .social .fas {
         font-size: 20px;
     }
 
