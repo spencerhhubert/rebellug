@@ -1,275 +1,219 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-body {
-    line-height:1;
-}
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
-}
-
-nav ul {
-    list-style:none;
-}
-
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
-/* End of starter code */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
 :root {
-    --default-orange: #efa93b;
-    --default-dark-gray: #252122;
-    --default-light-gray: #5d5d5d;
-    --default-lighter-gray: rgb(231, 231, 231);         
     --default-movement-action: all 0.3s ease 0s;
-    --default-movement: -3.5px;
-    --default-border-width: 1px;
-}
-
-body {
-    margin: 0;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    background-color: var(--default-dark-gray);
-    background: url(../images/black-greeble-background.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-size: 300%;
-
+    --default-movement: -2.5px;
+    --default-orange: orange;
+    --default-dark-orange: #db831e; 
 }
 
 * {
     transition: var(--default-movement-action);
 }
 
-p, h1, h2, h3, h3, h5 {
-    color: var(--default-dark-gray);
+
+body {
+    background-color: var(--default-dark-gray);
+    background: url(../images/black-greeble-background.jpg);
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    color: #5d5d5d;
+    font-size: 14pt;
+    line-height: 1.75em;
+}
+
+strong, b {
+    color: #252122;
+    font-weight: 400;
+}
+
+i, em {
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #252122;
+    font-weight: 700;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.35em;
+}
+
+h1.header, h2.header {
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: -0.035em;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+    padding: 0;
 }
 
-.box {
-    flex-direction: column;
-    padding: 10px;
-    margin-bottom: 20px;
+a {
+    color: var(--default-orange);
 }
 
-.section {
-    flex-direction: column;
+a:hover {
+    color: var(--default-orange);
 }
 
-.item {
-    display: inline;
+a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1 {
+    transform: translateY(var(--default-movement));
 }
 
-.right {
-    justify-content: flex-end;
+.fa, .fab, .fas {
+    color: var(--default-orange);
+    font-size: 30px;
+}
+
+.social {
+    flex-direction: row;
+    
+}
+
+.social .col {
+    padding: 0 10px 0 0 !important;
+}
+
+.navbar {
+    width: 100% !important;
+    max-width: 100% !important;
+    background: url(../images/white-greeble-background.jpg);
+}
+
+.navbar .logo {
+    height: 35px;
+}
+
+.navbar p {
+    margin: 0;
+}
+
+.navbar .container {
+    max-width: 100%;
+    max-width: 1110px;
+    height: 75px;
+}
+
+.navbar-toggler {
+    border-radius: 0;
 }
 
 .content {
     background-color: #f7f7f7;
+    padding: 10px 0;
+}
+
+.box {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    
 }
 
 .content .box {
-    background-color: white;
-    border-bottom: 1px solid #ccc;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    transform: translateY(var(--default-movement));
-}
-
-button {
-    padding: 6px 10px;
-    background: none;
-    border-color: var(--default-orange);
-    border-width: var(--default-border-width);
-    border-style: solid;
-    font-weight: bold;
-}
-
-.header {
-    width: 100% !important;
-    max-width: 100% !important;
-    background: url(../images/white-greeble-background.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-size: 300%;
+    margin: 25px 0;
+    padding: 35px 50px;
 }
 
 .footer {
-    width: 100% !important;
-    max-width: 100% !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* .footer p {
-    color: #858484;
-    background-color: #2c2929;
     padding: 10px;
 }
 
-.nav button * {
-    color: var(--default-light-gray);
-}
-
-.nav button {
-    border-width: 0px;
-    margin: 0 5px;
-}
-
-ul.nav {
+.footer p, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6{
+    color: #fff;
     margin: 0;
-    padding: 0;
 }
 
-button * {
-    margin: 0px;
-}
-
-button:hover {
-    background-color: var(--default-orange);
-    transform: translateY(var(--default-movement));
-    cursor: pointer;
-}
-
-button:hover * {
-    color: white;
-}
-
-.active button {
-    background-color: var(--default-orange);
-}
-
-.active button * {
-    color: white;
-}
-
-.social .fab {
-    font-size: 2em;
-    color: var(--default-dark-gray);
-}
-
-.social a:hover .fab {
+.footer a * {
     color: var(--default-orange);
 }
 
-.social .container {
-    align-self: center;
-    margin: 0 10px;
+.footer .item {
+    margin-top: 10px;
 }
 
-.social {
-    padding: 0;
+.footer #copyright {
+    color: gray;
+    text-align: center;
+    background: #2C2929;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.footer .fa, .footer .fas, .footer .fab {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer .contact {
+    padding: 10px;
     margin: 0;
-    position: absolute;
-    left: 110%;
-} */
+}
+
+.footer .contact .row {
+    margin: 5px;
+    padding: 0;
+}
+
+.footer .contact .col {
+    padding: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+    .social .fa, .social .fab, .social .fas {
+        font-size: 20px;
+    }
+
+    .navbar .navbar-toggler-icon {
+        font-size: 15px;
+    }
+
+    .social .col {
+        padding: 0 5px 0 0 !important;
+    }
+
+    .navbar .logo {
+        height: 30px;
+    }
+
+    .navbar {
+        padding: 4px 8px;
+    }
+
+    .navbar .container {
+        height: auto;
+    }
+
+    .content .box {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

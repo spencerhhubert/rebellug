@@ -1,19 +1,20 @@
-<ul class="nav">
+<ul class="navbar-nav mr-auto">
     <?php
         foreach ($navItems as $item) {
             $output = "
-                <a href=\"$item[slug]\">
-                    <button>
+                    <a class='nav-link' href=\"$item[slug]\">
                         <p>$item[title]</p>
-                    </button>
-                </a>
-            </li>";
+                    </a>
+                </li>
+            ";
+
             if($_SERVER['SCRIPT_NAME'] == $item["slug"]) {
-                $output = "<li class='active item'>" . $output;
+                $output = "<li class='nav-item active'>" . $output . "<span class='sr-only'>(current)</span> </a>";
             } else {
-                $output = "<li class='item'>" . $output;
+                $output = "<li class='nav-item'>" . $output . "</a>";
             }
             echo $output;
         }
     ?>
 </ul>
+
