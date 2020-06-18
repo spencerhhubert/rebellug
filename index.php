@@ -1,7 +1,44 @@
-<?php include "includes/header.php" ?>
+<?php include "config.php" ?>
+<?php include SITE_ROOT . "/includes/header.php" ?>
 
 <div class="content">
+
+    <div id="group-shot" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#group-shot" data-slide-to="0" class="active"></li>
+            <li data-target="#group-shot" data-slide-to="1"></li>
+            <li data-target="#group-shot" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner group-shot">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/groupshots/bw2019full.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/groupshots/bw2018full.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/groupshots/bb2017.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/groupshots/bw2017.jpg" alt="Fourth slide">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#group-shot" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#group-shot" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
     <div class="container">
+
         <div class="box">
             <div class="row justify-content-center center-text">
                 <h1 class="header">What is RebelLUG?</h1>
@@ -21,4 +58,4 @@
     </div>
 </div>
 
-<?php include "includes/footer.php" ?>
+<?php include SITE_ROOT . "/includes/footer.php" ?>
