@@ -1,21 +1,38 @@
 <?php include "config.php" ?>
 <?php include SITE_ROOT . "/includes/header.php" ?>
 
-<script>
-
-
-
-// alert( "Handler for .click() called." );
-</script>
-
 <div class="content">
     <div class="container">
         <div class="box">
             <div class="row justify-content-center members">
                 <?php
-                    // $result = mysqli_query($conn, "SELECT * FROM members");
-                    // $row = mysqli_fetch_assoc($result);
-                    // print_r($row['pfp']);
+                    $result = mysqli_query($conn, "SELECT * FROM members");
+                    $resultCheck = mysqli_num_rows($result);
+                    include 'print-members.php';
+                    if ($resultCheck > 0) {
+                        $count = 0;
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            $count++;
+                            $name = $row['name'];
+                            $handle = $row['handle'];
+                            $title = $row['title'];
+                            $description = $row['description'];
+                            $bio = $row['bio'];
+                            $pfp = $row['pfp'];
+                            $youtube = $row['youtube'];
+                            $flickr = $row['flickr'];
+                            $instagram = $row['instagram'];
+                            $twitter = $row['twitter'];
+                            $facebook = $row['facebook'];
+                            $personalSite = $row['personalSite'];
+                            $dateJoined = $row['dateJoined'];
+                            $highCommand = $row['highCommand'];
+                            $manualOrder = $row['manualOrder'];
+                            printMemberModule($count, $name, $handle, $title, $description, $bio, $pfp, $youtube, $flickr, $instagram, $twitter, $facebook, $personalSite, $dateJoined, $highCommand, $manualOrder);
+                        }
+                    } else {
+                        echo "There was an error loading the members";
+                    }
                 ?>
 
                 <div class="row person">
