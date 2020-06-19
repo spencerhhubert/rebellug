@@ -178,7 +178,28 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1 {
     object-position: 50% 30%;
     width: 100%;
     max-height: 500px;
-  }
+}
+
+.members img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
+}
+
+.members .social {
+    margin: 15px 0 10px 0;
+}
+
+.members .social i {
+    margin: 0 2px;
+}
+
+.members .person {
+    padding: 10px;
+    margin-bottom: 15px;
+}
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -186,7 +207,7 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1 {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 767.98px) {
-    .social .fa, .social .fab, .social .fas {
+    .navbar .social .fa,.navbar .social .fab, .navbar .social .fas {
         font-size: 20px;
     }
 
