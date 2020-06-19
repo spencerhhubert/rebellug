@@ -33,9 +33,9 @@
                         <h3>Lego Buff Productions</h3>
                         <p>LUG Ambassador</p>
                         <p><i>Danny is in charge of communication between the LUG and the LEGO® group as well as running the RebelLUG YouTube channel. Danny is a co-founder.</i></p>
-                        <div class="collapse" id="bio"><p>"Hey, I'm Danny! I am most commonly found working behind the scenes on planning public LUG displays, setting up sponsorships, and running day-to-day LUG operations. As a Freshman at the University of Illinois studying Industrial Engineering, my time available for building has been severely limited. I have taken a recent interest to building movie-related creations."</p></div>
-                        <a data-toggle="collapse" href="#bio" role="button" aria-expanded="false" aria-controls="collapseExample" id="bioButton" class="visible-xs">Bio</a>
-                        <div class="d-md-block d-sm-none d-none" id="xs-check"></div>
+                        <div class="collapse banana" id="bio1"><p>"Hey, I'm Danny! I am most commonly found working behind the scenes on planning public LUG displays, setting up sponsorships, and running day-to-day LUG operations. As a Freshman at the University of Illinois studying Industrial Engineering, my time available for building has been severely limited. I have taken a recent interest to building movie-related creations."</p></div>
+                        <a data-toggle="collapse" href="#bio1" role="button" aria-expanded="false" aria-controls="collapseExample" id="bioButton" class="visible-xs bioButton">Bio</a>
+                        <div class="d-md-block d-sm-none d-none" id="device-size-check"></div>
                     </div>
                 </div>
             </div>            
@@ -45,15 +45,15 @@
 <?php include SITE_ROOT . "/includes/footer.php" ?>
 
 <script>
-$("#bioButton").click(function(){
+$(".bioButton").click(function(){
     $(this).text(function(i,old){
         return old=='Bio' ?  'Hide Bio' : 'Bio';
     });
 });
 
-if( $("#xs-check").is(":visible") ) {
-    $("#bio").removeClass("collapse");
-    $("#bioButton").hide();
+if( $("#device-size-check").is(":visible") ) {
+    $(".banana").removeClass("collapse");
+    $(".bioButton").hide();
 }
 
 </script>
