@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="/assets/style.css?<?php echo date('l jS \of F Y h:i:s A'); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/21a7b3848c.js" crossorigin="anonymous"></script>
-
+<!-- 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129087319-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-129087319-1');
-    </script>
+    </script> -->
 </head>
 
 <body>
