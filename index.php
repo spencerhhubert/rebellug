@@ -4,11 +4,11 @@
 <div class="content">
 
     <div id="group-shot" class="carousel slide" data-ride="carousel">
-
         <ol class="carousel-indicators">
             <li data-target="#group-shot" data-slide-to="0" class="active"></li>
             <li data-target="#group-shot" data-slide-to="1"></li>
             <li data-target="#group-shot" data-slide-to="2"></li>
+            <li data-target="#group-shot" data-slide-to="3"></li>
         </ol>
 
         <div class="carousel-inner group-shot">
@@ -34,7 +34,6 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-
     </div>
 
     <div class="container">

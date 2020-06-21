@@ -21,16 +21,62 @@ include SITE_ROOT . "/includes/header.php";
             $price = $row['price'];
             $paypal_link = $row['paypal_link'];
             $xml_parts_list = $row['xml_parts_list'];
-            $pic_main = $row['pic_main'];
-            $pic_2 = $row['pic_2'];
-            $pic_3 = $row['pic_3'];
-            $pic_4 = $row['pic_4'];
-            $pic_5 = $row['pic_5'];
-            $pic_6 = $row['pic_6'];
-            $pic_7 = $row['pic_7'];
-            $pic_8 = $row['pic_8'];
-            $pic_9 = $row['pic_9'];
-            $pic_10 = $row['pic_10'];
+            $pics = array (
+                "main" => $row['pic_main'],
+                2 => $row['pic_2'],
+                3 => $row['pic_3'],
+                4 => $row['pic_4'],
+                5 => $row['pic_5'],
+                6 => $row['pic_6'],
+                7 => $row['pic_7'],
+                8 => $row['pic_8'],
+                9 => $row['pic_9'],
+                10 => $row['pic_10']
+            );
+
+            $numOfPics = 0;
+            foreach ($pics as $pic) {
+                if ($pic != null) {
+                    $numOfPics++;
+                }
+
+            }
+
+            print_r('
+            <div id="group-shot" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#group-shot" data-slide-to="0" class="active"></li>');
+                    for ($i = 1; $i <= $numOfPics - 1; $i++) {
+                        print_r('<li data-target="#group-shot" data-slide-to="' . $i . '"></li>');
+                    }
+            print_r('</ol>');
+            print_r('
+            <div class="carousel-inner group-shot">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/' . $pics['main'] . '" alt="First slide">
+                </div>
+            ');
+            for ($i = 2; $i <= $numOfPics; $i++) {
+                print_r('
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/' . $pics[$i] . '" alt="LEGO ' . $title . '">
+                </div>
+                ');
+            }
+
+            print_r('</div>');
+            print_r('
+            <a class="carousel-control-prev" href="#group-shot" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#group-shot" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            ');
+
+            print_r('</div>');
             print_r($description);
             ?>
 
