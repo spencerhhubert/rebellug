@@ -67,7 +67,7 @@ a:hover {
     color: var(--default-orange);
 }
 
-a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1 {
+a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:hover h2, a:hover h3 {
     transform: translateY(var(--default-movement));
 }
 
@@ -201,25 +201,22 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1 {
     margin-bottom: 15px;
 }
 
-.inline {
-    display: inline;
-  }
-  
-  .link-button {
+.gallery-item {
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    width: 95%;
+    text-align: center;
+}
+
+.gallery-item p, .gallery-item h3 {
+    margin-bottom: 0;
+}
+
+.gallery-item button {
     background: none;
     border: none;
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 1em;
-    font-family: serif;
-  }
-  .link-button:focus {
-    outline: none;
-  }
-  .link-button:active {
-    color:red;
-  }
+}
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
