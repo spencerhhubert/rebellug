@@ -5,7 +5,6 @@ include "../config.php";
 include SITE_ROOT . "/includes/header.php";
 ?>
 
-
 <div class="content">
     <div class="container">
         <div class="box">

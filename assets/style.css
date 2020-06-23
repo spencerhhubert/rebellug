@@ -109,6 +109,10 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
     border-radius: 0;
 }
 
+.dropdown-item {
+    font-weight: 300;
+}
+
 .content {
     background-color: #f7f7f7;
     padding: 10px 0;
