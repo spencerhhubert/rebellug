@@ -18,7 +18,7 @@ include SITE_ROOT . "/includes/header.php"
                 <img class="d-block w-100" src="images/groupshots/bw2019full.JPG" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/groupshots/bw2018full.jpg" alt="Second slide">
+                <img class="d-block w-100" src="images/groupshots/bw2018full.JPG" alt="Second slide">
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="images/groupshots/bb2017.jpg" alt="Third slide">
