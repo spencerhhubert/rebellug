@@ -53,7 +53,6 @@ include SITE_ROOT . "/includes/header.php"
                 <h2 class="header">Our Discord Server</h2>
                 <p>RebelLUG also has an active, public Discord server for fans of LEGO (FOLs) to meet each other, talk about LEGO, participate in building challenges, and share work in progress builds for feedback from RebelLUG members and other FOLs.</p>
                 <iframe src="https://discordapp.com/widget?id=263492519277494272&theme=dark" width="500" height="350" allowtransparency="true" frameborder="0"></iframe>
-
             </div>
         </div>
     </div>

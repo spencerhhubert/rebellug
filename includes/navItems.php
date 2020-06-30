@@ -7,7 +7,7 @@
             "name" => "Home"
         ),
         array(
-            "slug" => "/members.php",
+            "slug" => "/members",
             "dirname" => "",
             "title" => "Members",
             "name" => "Members"
@@ -17,13 +17,13 @@
             "name" => "Gallery",
             "dropdownItems" => array(
                 array(
-                    "slug" => "/gallery/collaborations/index.php",
+                    "slug" => "/gallery/collaborations",
                     "dirname" => "/gallery/collaborations",
                     "title" => "Collaborations",
                     "name" => "Collaborations"
                 ),
                 array(
-                    "slug" => "/gallery/contests/index.php",
+                    "slug" => "/gallery/contests",
                     "dirname" => "/gallery/contests",
                     "title" => "Contests",
                     "name" => "Contests"
@@ -31,13 +31,13 @@
             )
         ),
         array(
-            "slug" => "/instructions/index.php",
+            "slug" => "/instructions",
             "dirname" => "/instructions",
             "title" => "Instructions",
             "name" => "Instructions"
         ),
         array(
-            "slug" => "/application.php",
+            "slug" => "/application",
             "dirname" => "",
             "title" => "Application",
             "name" => "Apply"
