@@ -29,9 +29,9 @@
 
             if (!isset($item["dropdownItems"])) {
                 $output = "
-                        <a class='nav-link' href=\"$item[slug]\">
+                        <a class='nav-link' href=\"$item[slug]\"><p>
                             $item[name]
-                        </a>
+                        </p></a>
                     </li>
                 ";
 
@@ -47,9 +47,9 @@
                 $output = '<li class="nav-item dropdown';
                 if (activePageCheck($item)) {$output = $output . ' active';}
                 $output = $output . '">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><p style="display: inline-block;">
                     ' . $item["name"] . '
-                </a>
+                </p></a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 ';
                 foreach ($item["dropdownItems"] as $dropdownItem) {

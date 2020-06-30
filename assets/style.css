@@ -67,7 +67,7 @@ a:hover {
     color: var(--default-orange);
 }
 
-a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:hover h2, a:hover h3 {
+a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:hover h2, a:hover h3, a:hover span {
     transform: translateY(var(--default-movement));
 }
 
@@ -220,6 +220,10 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
 .gallery-item button {
     background: none;
     border: none;
+}
+
+.gallery-item img {
+    width: 100%;
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */

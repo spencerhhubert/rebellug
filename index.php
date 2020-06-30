@@ -1,5 +1,7 @@
-<?php include "config.php" ?>
-<?php include SITE_ROOT . "/includes/header.php" ?>
+<?php
+include "config.php";
+include SITE_ROOT . "/includes/header.php"
+?>
 
 <div class="content">
 
@@ -13,7 +15,7 @@
 
         <div class="carousel-inner group-shot">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="images/groupshots/bw2019full.jpg" alt="First slide">
+                <img class="d-block w-100" src="images/groupshots/bw2019full.JPG" alt="First slide">
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="images/groupshots/bw2018full.jpg" alt="Second slide">
