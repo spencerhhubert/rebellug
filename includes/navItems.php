@@ -1,7 +1,7 @@
 <?php
     $navItems = array(
         array(
-            "slug" => "/index.php",
+            "slug" => "",
             "dirname" => "",
             "title" => "RebelLUG",
             "name" => "Home"
@@ -43,7 +43,7 @@
             "name" => "Apply"
         ),
         // array(
-        //     "slug" => "/blog.php",
+        //     "slug" => "/blog",
         //     "dirname" => "",
         //     "title" => "Blog",
         //     "name" => "Blog"
