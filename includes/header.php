@@ -27,7 +27,7 @@
 <body>
 <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light box">
     <div class="container">
-    <a class="navbar-brand" href="/index.php">
+    <a class="navbar-brand" href="/index">
         <img src="/images/logos/rebellug-logo-big-90gray-half-res.png" alt="RebelLUG Logo" class="logo">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">

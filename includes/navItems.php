@@ -1,7 +1,7 @@
 <?php
     $navItems = array(
         array(
-            "slug" => "",
+            "slug" => "/index",
             "dirname" => "",
             "title" => "RebelLUG",
             "name" => "Home"
@@ -17,13 +17,13 @@
             "name" => "Gallery",
             "dropdownItems" => array(
                 array(
-                    "slug" => "/gallery/collaborations",
+                    "slug" => "/gallery/collaborations/index",
                     "dirname" => "/gallery/collaborations",
                     "title" => "Collaborations",
                     "name" => "Collaborations"
                 ),
                 array(
-                    "slug" => "/gallery/contests",
+                    "slug" => "/gallery/contests/index",
                     "dirname" => "/gallery/contests",
                     "title" => "Contests",
                     "name" => "Contests"
@@ -31,7 +31,7 @@
             )
         ),
         array(
-            "slug" => "/instructions",
+            "slug" => "/instructions/index",
             "dirname" => "/instructions",
             "title" => "Instructions",
             "name" => "Instructions"
