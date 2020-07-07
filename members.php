@@ -2,7 +2,7 @@
 include "config.php";
 include SITE_ROOT . "/includes/header.php";
 
-function printMemberModule($count, $name, $handle, $title, $description, $bio, $pfp, $youtube, $flickr, $instagram, $twitter, $facebook, $personalSite, $dateJoined, $manualOrder, $isMember, $isHighCommand) {
+function printMemberModule($count, $name, $handle, $title, $description, $bio, $pfp, $youtube, $flickr, $instagram, $twitter, $facebook, $personalSite, $dateJoined, $manualOrder, $isMember, $isHighCommand, $member_ID) {
 
     print_r('
     <div class="row person">
@@ -17,47 +17,12 @@ function printMemberModule($count, $name, $handle, $title, $description, $bio, $
     print_r('    
             <div class="row justify-content-center">
                 <img src="/images/members/' . $pfp . '" alt="' . $handle . ' Profile Picture">
-            </div>
-            <div class="row justify-content-center social">'
+            </div>'
     );
-    if ($youtube != "") {
-        print_r('
-            <a href="' . $youtube . '" alt="' . $handle . '" target="_BLANK"><i class="fab fa-youtube align-middle" aria-hidden="true"></i></a>
-        ');
-    }
-    
-    if ($flickr != "") {
-        print_r('
-            <a href="' . $flickr . '" alt="' . $handle . '" target="_BLANK"><i class="fab fa-flickr align-middle" aria-hidden="true"></i></a>
-        ');
-    }
-    
-    if ($instagram != "") {
-        print_r('
-            <a href="' . $instagram . '" alt="' . $handle . '" target="_BLANK"><i class="fab fa-instagram align-middle" aria-hidden="true"></i></a>
-        ');
-    }
-    
-    if ($twitter != "") {
-        print_r('
-            <a href="' . $twitter . '" alt="' . $handle . '" target="_BLANK"><i class="fab fa-twitter align-middle" aria-hidden="true"></i></a>
-        ');
-    }
-    
-    if ($facebook != "") {
-        print_r('
-            <a href="' . $facebook . '" alt="' . $handle . '" target="_BLANK"><i class="fab fa-facebook align-middle" aria-hidden="true"></i></a>
-        ');
-    }
-    
-    if ($personalSite != "") {
-        print_r('
-            <a href="' . $personalSite . '" alt="' . $handle . '" target="_BLANK"><i class="fas fa-info-circle align-middle" aria-hidden="true"></i></a>
-        ');
-    }
+
+    printMemberSocial($member_ID);
 
     print_r('
-        </div>
         </div>
         ');
         if ($isHighCommand == 1) {
@@ -109,7 +74,8 @@ function printMemberModule($count, $name, $handle, $title, $description, $bio, $
                             $manualOrder = $row['manualOrder'];
                             $isMember = $row['isMember'];
                             $isHighCommand = $row['isHighCommand'];
-                            printMemberModule($count, $name, $handle, $title, $description, $bio, $pfp, $youtube, $flickr, $instagram, $twitter, $facebook, $personalSite, $dateJoined, $manualOrder, $isMember, $isHighCommand);
+                            $member_ID = $row['id'];
+                            printMemberModule($count, $name, $handle, $title, $description, $bio, $pfp, $youtube, $flickr, $instagram, $twitter, $facebook, $personalSite, $dateJoined, $manualOrder, $isMember, $isHighCommand, $member_ID);
                         }
                     } else {
                         echo "There was an error loading the members";
@@ -143,7 +109,7 @@ function printMemberModule($count, $name, $handle, $title, $description, $bio, $
                             $manualOrder = $row['manualOrder'];
                             $isMember = $row['isMember'];
                             $isHighCommand = $row['isHighCommand'];
-                            printMemberModule($count, $name, $handle, $title, $description, $bio, $pfp, $youtube, $flickr, $instagram, $twitter, $facebook, $personalSite, $dateJoined, $manualOrder, $isMember, $isHighCommand);
+                            printMemberModule($count, $name, $handle, $title, $description, $bio, $pfp, $youtube, $flickr, $instagram, $twitter, $facebook, $personalSite, $dateJoined, $manualOrder, $isMember, $isHighCommand, $member_ID);
                         }
                     } else {
                         echo "There was an error loading the members";

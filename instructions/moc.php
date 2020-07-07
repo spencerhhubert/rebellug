@@ -20,6 +20,7 @@ include SITE_ROOT . "/includes/header.php";
             $price = $row['price'];
             $paypal_link = $row['paypal_link'];
             $xml_parts_list = $row['xml_parts_list'];
+            $builder_id = $row['builder_id'];
             $pics = array (
                 "main" => $row['pic_main'],
                 2 => $row['pic_2'],
@@ -42,15 +43,24 @@ include SITE_ROOT . "/includes/header.php";
             }
 
             print_r('
-            <div id="group-shot" class="carousel slide" data-ride="carousel">
+            <div style="text-align: center;">
+                <h1> ' . $title . '</h1>
+                <div class="row justify-content-center align-items-center">
+                <p style="margin: 0 10px 0 0;">By ' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>');
+                printMemberSocial($builder_id);
+                print_r('</div>');
+
+            print_r('    
+            </div>
+            <div id="instructions-slideshow" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#group-shot" data-slide-to="0" class="active"></li>');
+                    <li data-target="#instructions-slideshow" data-slide-to="0" class="active"></li>');
                     for ($i = 1; $i <= $numOfPics - 1; $i++) {
-                        print_r('<li data-target="#group-shot" data-slide-to="' . $i . '"></li>');
+                        print_r('<li data-target="#instructions-slideshow" data-slide-to="' . $i . '"></li>');
                     }
             print_r('</ol>');
             print_r('
-            <div class="carousel-inner group-shot">
+            <div class="carousel-inner instructions-slideshow">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="images/' . $pics['main'] . '" alt="First slide">
                 </div>
@@ -65,18 +75,18 @@ include SITE_ROOT . "/includes/header.php";
 
             print_r('</div>');
             print_r('
-            <a class="carousel-control-prev" href="#group-shot" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#instructions-slideshow" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#group-shot" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#instructions-slideshow" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
             ');
 
             print_r('</div>');
-            print_r($description);
+            print_r('<p>' . $description . '</p>');
             ?>
 
             <p>The XML parts list is available <a href="parts/<?php echo $xml_parts_list ?>">here</a>. Here is our <a href="https://www.youtube.com/watch?v=nZHHhrKHXPA">video tutorial</a> to import the XML parts list to <a href="https://www.bricklink.com/">Bricklink</a>. (Does not work on Apple Safari)</p>

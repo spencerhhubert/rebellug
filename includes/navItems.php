@@ -54,7 +54,9 @@
         global $navItems;
         foreach ($navItems as $item) {
             if (!isset($item["dropdownItems"])) {
-                if( ($_SERVER['SCRIPT_NAME'] == $item["slug"]) || (pathinfo($_SERVER['PHP_SELF'])['dirname']) == $item["dirname"]) {
+                // print_r($_SERVER['REQUEST_URI']);
+                // print_r($item["slug"]);
+                if( ($_SERVER['REQUEST_URI'] == $item["slug"]) || ($_SERVER['REQUEST_URI'] . ".php" == $item["slug"]) || (pathinfo($_SERVER['PHP_SELF'])['dirname']) == $item["dirname"]) {
                     return $item["title"];
                 }
             }

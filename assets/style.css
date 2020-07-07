@@ -82,7 +82,7 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
 }
 
 .social .col {
-    padding: 0 10px 0 0 !important;
+    padding: 0 0 0 0 !important;
 }
 
 .navbar {
@@ -111,6 +111,10 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
 
 .dropdown-item {
     font-weight: 300;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--default-orange);
 }
 
 .content {
@@ -192,12 +196,12 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
     max-width: 250px;
 }
 
-.members .social {
+.social {
     margin: 15px 0 10px 0;
 }
 
-.members .social i {
-    margin: 0 2px;
+.social i {
+    margin: 0 3px;
 }
 
 .members .person {
@@ -224,6 +228,24 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
 
 .gallery-item img {
     width: 100%;
+}
+
+.instructions-slideshow img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 600px;
+}
+
+.collaboration .logo {
+    width: 50%;
+}
+
+.collaboration-slideshow img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 80%;
+    height: 700px;
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */

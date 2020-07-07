@@ -1,10 +1,7 @@
 <?php
     function activePageCheck($item) {
         if (!isset($item["dropdownItems"])) {
-            if (
-                $_SERVER['SCRIPT_NAME'] == $item["slug"] ||
-                (pathinfo($_SERVER['PHP_SELF'])['dirname']) == $item["dirname"]
-            ) {
+            if( ($_SERVER['REQUEST_URI'] == $item["slug"]) || ($_SERVER['REQUEST_URI'] . ".php" == $item["slug"]) || (pathinfo($_SERVER['PHP_SELF'])['dirname']) == $item["dirname"]) {
                 return true;
             }   
         }
