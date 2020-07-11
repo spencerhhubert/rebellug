@@ -16,7 +16,9 @@ function printMemberModule($count, $name, $handle, $title, $description, $bio, $
 
     print_r('    
             <div class="row justify-content-center">
-                <img src="/images/members/' . $pfp . '" alt="' . $handle . ' Profile Picture">
+                <div class="imageContainer">
+                    <img src="/images/members/' . $pfp . '" alt="' . $handle . ' Profile Picture">
+                </div>
             </div>'
     );
 
