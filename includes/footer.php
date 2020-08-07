@@ -2,7 +2,7 @@
         <div class="row justify-content-center">
 
             <div class="col-12 col-md-5 d-flex justify-content-center item" style="margin-top: 25px;">
-                <a href="https://lan.lego.com/" target="_blank" style="width: 90%; max-width: 400px;">
+                <a href="https://lan.lego.com/clubs/319-rebellug/" target="_blank" style="width: 90%; max-width: 400px;">
                     <img src="/images/Recognized-LOC_White_2019.png" style="width: 100%">
                 </a>
             </div>
