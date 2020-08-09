@@ -43,7 +43,8 @@ include SITE_ROOT . "/includes/header.php"
         <div class="box">
             <div class="row justify-content-center center-text">
                 <h1 class="header">What is RebelLUG?</h1>
-                <p>RebelLUG is a private, online LEGO® User Group made up of independent creators from YouTube, Instagram, and Flickr. We were founded in 2015 as something to call our group of seven friends so we could work on bigger group projects together, under a single name. Since then we’ve grown to <b>54 members across 12 countries.</b> Our LEGO® collaborations happen online or at conventions across the globe. Our goal is to provide an environment for our members to grow and build LEGO® in new, creative ways. We also strive to encourage other members of the online LEGO® community to do the same.</p>
+                <p>RebelLUG is a team of talented LEGO MOC builders and passionate community members who seek to both work together and impact the community they exist in for as many FOLs as possible.</p>
+                <p>Since our founding in 2015, we have grown to 54 members across 13 countries. Our members are individual creators who share their work on YouTube, Flickr, and Instagram, but as a group we work together on larger collaborative builds both online and at conventions across the world. We also work with sponsors and The LEGO Group to give back and host contests for the online LEGO community we all belong to.</p>
                 <div class="imageContainer">
                 <img src="/images/map.png" alt="The countries RebelLUG members are from on a global map" style="width: 90%; max-width: 800px;">
                 </div>
