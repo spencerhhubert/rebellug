@@ -18,6 +18,20 @@
             return $output;
         }
     }
+
+    function noExistingPageCheck($navItems) {
+        $output = true;
+        foreach ($navItems as $item) {
+            if (activePageCheck($item)) {$output = false;}
+        }
+        return $output;
+    }
+
+    function isHomeCheck($item) {
+        if ($item["name"] == "Home") {
+            return true;
+        }
+    }
 ?>
 
 <ul class="navbar-nav mr-auto">
@@ -25,6 +39,7 @@
         foreach ($navItems as $item) {
 
             if (!isset($item["dropdownItems"])) {
+
                 $output = "
                         <a class='nav-link' href=\"$item[slug]\"><p>
                             $item[name]
@@ -32,7 +47,7 @@
                     </li>
                 ";
 
-                if (activePageCheck($item)) {
+                if (activePageCheck($item) || (isHomeCheck($item) && noExistingPageCheck($navItems))) {
                     $output = "<li class='nav-item active'>" . $output . "<span class='sr-only'>(current)</span> </a>";
                 } else {
                     $output = "<li class='nav-item'>" . $output . "</a>";
