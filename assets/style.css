@@ -114,6 +114,7 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
 }
 
 .dropdown-item.active, .dropdown-item:active {
+    transition: 0s;
     background-color: var(--default-orange);
 }
 
@@ -232,7 +233,8 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
 }
 
 .gallery-item img {
-    width: 100%;
+    max-height: 250px;
+    max-width: 100%;
 }
 
 .instructions-slideshow img {

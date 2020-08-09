@@ -3,8 +3,8 @@ function printCollaborationsModule($title, $release_date, $page, $location, $ban
     print_r('
         <div class="col-md-4 col-md">
             <div class="gallery-item">
-            <a href="' . $page . '"><h3>' . $title . '</h3></a>
-                <p>' . date('F, Y', strtotime($release_date)) . ' - ' . $location . '</p>
+                <a href="' . $page . '"><h3>' . $title . '</h3></a>
+                    <p>' . date('F, Y', strtotime($release_date)) . ' - ' . $location . '</p>
                 <a href="' . $page . '"><img src="images/' . $banner_pic . '" alt="' . $title . '"></a>
             </div> 
         </div>
@@ -30,7 +30,6 @@ include SITE_ROOT . "/includes/header.php"
                             $location = $row['location'];
                             $logo = $row['logo'];
                             $banner_pic = $row['banner_pic'];
-                            $description = $row['description'];
                             printCollaborationsModule($title, $release_date, $page, $location, $banner_pic);
                         }
                     } else {
