@@ -186,3 +186,24 @@ function printSlideshow($className, $pics, $title) {
     </div>
     ');
 }
+
+function printFlickrFeed() {
+    $flickrFeed = json_decode(file_get_contents("https://www.flickr.com/services/feeds/groups_pool.gne?id=3026205@N22&format=json&nojsoncallback=1"));
+    $output = '<div class="row flickrFeed">';
+    for ($i = 0; $i <= 19; $i++) {
+        // if ($i % 4 == 0 || $i == 0) {
+        //     $output = $output . '<div class="row" style="padding-top: 30px;">';
+        // }
+
+
+        $biggerImageLink = substr_replace($flickrFeed->items[$i]->media->m, "z", -5, 1);
+
+        $output = $output . '<div class="col-md-3 col-xs-4"><a href="' . $flickrFeed->items[$i]->link. '" target="_blank"><img src="' . $biggerImageLink . '"></a></div>';
+        // if ((($i + 1) % 4) == 0) {
+        //     $output = $output . '</div>';
+        // }
+    }
+    $output = $output . '</div>';
+
+    echo $output;
+}
