@@ -140,7 +140,10 @@ function printByline($memberID) {
     echo $output;
 }
 
-function printSlideshow($className, $count, $pics, $title) {
+function printSlideshow($className, $pics, $title) {
+    global $count;
+    $count = 0;
+    $count++;
     $numOfPics = 0;
     foreach ($pics as $pic) {
         if ($pic != null) {
@@ -159,10 +162,10 @@ function printSlideshow($className, $count, $pics, $title) {
     print_r('
     <div class="carousel-inner collaboration-slideshow">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="images/' . $pics['1'] . '" alt="First slide">
+            <img class="d-block w-100" src="images/' . $pics['0'] . '" alt="First slide">
         </div>
     ');
-    for ($i = 2; $i <= $numOfPics; $i++) {
+    for ($i = 1; $i <= $numOfPics - 1; $i++) {
         print_r('
         <div class="carousel-item">
             <img class="d-block w-100" src="images/' . $pics[$i] . '" alt="LEGO ' . $title . '">
