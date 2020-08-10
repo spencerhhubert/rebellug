@@ -1,4 +1,61 @@
 <?php
+function memberSocial($memberID) {
+    global $conn;
+    $member_info = mysqli_query($conn, "SELECT * FROM members where id=$memberID");
+    $member_info_result_check = mysqli_num_rows($member_info);
+    $member_info_row = mysqli_fetch_assoc($member_info);
+    $name = $member_info_row ['name'];
+    $handle = $member_info_row ['handle'];
+    $pfp = $member_info_row ['pfp'];
+    $youtube = $member_info_row ['youtube'];
+    $flickr = $member_info_row ['flickr'];
+    $instagram = $member_info_row ['instagram'];
+    $twitter = $member_info_row ['twitter'];
+    $facebook = $member_info_row ['facebook'];
+    $personalSite = $member_info_row ['personalSite'];
+
+    $output = '<div class="social">';
+
+    if ($youtube != "") {
+        $output = $output . '
+            <a href="' . $youtube . '" alt="' . $handle . '" target="_BLANK"><i class="fab fa-youtube align-middle" aria-hidden="true"></i></a>
+        ';
+    }
+    
+    if ($flickr != "") {
+        $output = $output . '
+            <a href="' . $flickr . '" alt="' . $handle . '" target="_BLANK"><i class="fab fa-flickr align-middle" aria-hidden="true"></i></a>
+        ';
+    }
+    
+    if ($instagram != "") {
+        $output = $output . '
+            <a href="' . $instagram . '" alt="' . $handle . '" target="_BLANK"><i class="fab fa-instagram align-middle" aria-hidden="true"></i></a>
+        ';
+    }
+    
+    if ($twitter != "") {
+        $output = $output . '
+            <a href="' . $twitter . '" alt="' . $handle . '" target="_BLANK"><i class="fab fa-twitter align-middle" aria-hidden="true"></i></a>
+        ';
+    }
+    
+    if ($facebook != "") {
+        $output = $output . '
+            <a href="' . $facebook . '" alt="' . $handle . '" target="_BLANK"><i class="fab fa-facebook align-middle" aria-hidden="true"></i></a>
+        ';
+    }
+    
+    if ($personalSite != "") {
+        $output = $output . '
+            <a href="' . $personalSite . '" alt="' . $handle . '" target="_BLANK"><i class="fas fa-info-circle align-middle" aria-hidden="true"></i></a>
+        ';
+    }
+
+    $output = $output . '</div>';
+    return $output;
+}
+
 function printMemberSocial($memberID) {
     global $conn;
     $member_info = mysqli_query($conn, "SELECT * FROM members where id=$memberID");
@@ -73,6 +130,14 @@ function memberHandle($memberID) {
     $member_info_row = mysqli_fetch_assoc($member_info);
     $handle = $member_info_row ['handle'];
     return $handle;
+}
+
+function printByline($memberID) {
+    $output = "<div><div class='row h-100'>";
+    $output = $output . "<h5 class='my-auto' style='margin-right: 8px;'>By " . memberName($memberID) . " - " . memberHandle($memberID) . "</h5>";
+    $output = $output . "<div class='my-auto'>" . memberSocial($memberID) . "</div>";
+    $output = $output . "</div></div>";
+    echo $output;
 }
 
 function printSlideshow($className, $count, $pics, $title) {

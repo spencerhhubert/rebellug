@@ -111,6 +111,7 @@ function printMemberModule($count, $name, $handle, $title, $description, $bio, $
                             $manualOrder = $row['manualOrder'];
                             $isMember = $row['isMember'];
                             $isHighCommand = $row['isHighCommand'];
+                            $member_ID = $row['id'];
                             printMemberModule($count, $name, $handle, $title, $description, $bio, $pfp, $youtube, $flickr, $instagram, $twitter, $facebook, $personalSite, $dateJoined, $manualOrder, $isMember, $isHighCommand, $member_ID);
                         }
                     } else {
