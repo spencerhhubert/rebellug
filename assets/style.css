@@ -67,7 +67,7 @@ a:hover {
     color: var(--default-orange);
 }
 
-a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:hover h2, a:hover h3, a:hover span {
+a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:hover h2, a:hover h3, a:hover span, a:hover button {
     transform: translateY(var(--default-movement));
 }
 
@@ -274,6 +274,13 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
     height: 250px;
     object-fit: cover;
     margin-top: 30px;
+}
+
+button {
+    border: 0px;
+    color: white;
+    background-color: var(--default-orange);
+    padding: 5px 15px;
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */

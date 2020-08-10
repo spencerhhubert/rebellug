@@ -64,6 +64,7 @@ include SITE_ROOT . "/includes/header.php"
                 <h2 class="header">Recent Member Work</h2>
                 <p>RebelLUG members are constantly working on new LEGO projects. This is a live feed from our <a href="https://www.flickr.com/groups/rebellug/pool/" target="_blank">Flickr group</a>. Our <a href="https://instagram.com/rebellug" target="_blank">Instagram page </a> is also a good place to stay up to date with their latest MOCs.</p>
                 <?php printFlickrFeed() ?>
+                <a href="https://www.flickr.com/groups/rebellug/pool/" target="_blank"><button style="margin-top: 30px;">View more MOCs</button></a>
             </div>
         </div>
     </div>
