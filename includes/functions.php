@@ -133,9 +133,9 @@ function memberHandle($memberID) {
 }
 
 function printByline($memberID) {
-    $output = "<div><div class='row h-100'>";
-    $output = $output . "<h5 class='my-auto' style='margin-right: 8px;'>By " . memberName($memberID) . " - " . memberHandle($memberID) . "</h5>";
-    $output = $output . "<div class='my-auto'>" . memberSocial($memberID) . "</div>";
+    $output = "<div style='margin-bottom: 8px;'><div class='row h-100'>";
+    $output = $output . "<h5 class='my-auto col-auto'>By " . memberName($memberID) . " - " . memberHandle($memberID) . "</h5>";
+    $output = $output . "<div class='my-auto col'>" . memberSocial($memberID) . "</div>";
     $output = $output . "</div></div>";
     echo $output;
 }

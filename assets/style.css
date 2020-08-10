@@ -78,7 +78,10 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
 
 .social {
     flex-direction: row;
-    
+}
+
+.social i {
+    margin: 0 3px;
 }
 
 .social .col {
@@ -202,17 +205,13 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
     align-items: flex-start;
 }
 
-.social {
-    margin: 15px 0 10px 0;
-}
-
-.social i {
-    margin: 0 3px;
-}
-
 .members .person {
     padding: 10px;
     margin-bottom: 15px;
+}
+
+.members .social {
+    margin: 10px 0 10px 0;
 }
 
 .gallery-item {

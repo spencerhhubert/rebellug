@@ -19,8 +19,8 @@ include SITE_ROOT . "/includes/header.php";
             <div class="row build">
                 <div class="col-md-7">
                     <h2>Base Camp</h2>
-                    <p>Command Log Entry 0001</p>
                     <?php printByline(4) ?>
+                    <p>Command Log Entry 0001</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nemo explicabo, modi architecto, repellendus minus quae perspiciatis, optio voluptates porro veritatis aliquid officia deleniti saepe animi dolores. Ipsa, laboriosam dolorum.</p>
                 </div>
                 <div class="col-md-5">
@@ -28,6 +28,7 @@ include SITE_ROOT . "/includes/header.php";
                 </div>
             </div>
             <hr>
+            <?php testCount(); testCount();?>
         </div>
     </div>
 </div>
