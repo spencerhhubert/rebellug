@@ -8,7 +8,7 @@ include SITE_ROOT . "/includes/header.php";
     <div class="container">
         <div class="box collaboration">
             <div class="text-center">
-                <h1>So Uncivilized</h1>
+                <h1 class="header">So Uncivilized</h1>
                 <img src="images/so-uncivilized/SoUncivilizedBlack.png" class="logo">
                 <p>So Uncivilized, the RebelLUG Blaster Collaboration, presented the challenge to build any 1:1 scale blaster from the Star Wars universe.</p>
                 <p>The collaboration was premiered on July 3rd, 2020, and featured 17 different 1:1 scale LEGO Star Wars blasters from 16 different builders.</p>

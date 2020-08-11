@@ -8,7 +8,7 @@ include SITE_ROOT . "/includes/header.php";
     <div class="container">
         <div class="box collaboration">
             <div class="text-center">
-                <h1>The Laceropes Mission</h1>
+                <h1 class="header">The Laceropes Mission</h1>
                 <img src="images/laceropes/laceropeslogo.png" class="logo">
                 <p>The Laceropes Mission is an original Star Wars story by RebelLUG like no other LEGO collaboration project before. It is proudly sponsored by <a href="https://avfigures.com" target="_blank">AV Figures</a>, who helped us create Validus Squad, a four member clone squad of completly custom LEGO minifigures. The squad was available for purchase in limited quantites from AV Figures.</p>
                 <p>This collaboration was premiered at Brickworld Chicago 2019 and released entirely online on June 22nd, 2019.</p>

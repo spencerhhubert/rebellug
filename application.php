@@ -15,7 +15,7 @@ include SITE_ROOT . "/includes/header.php"
                 <div class="col-md-8">
                     <p>RebelLUG is a private, online LEGO User Group. All prospective members go through the application process detailed on this page, as we don’t invite new members.</p>
                     <p>The application process may vary at conventions that RebelLUG is present at. If you’re attending one of those conventions, contact an attending RebelLUG member to organize an in-person interview.</p>
-                    <p>In addition to reviewing your written application and submitted MOCs, we like to get to know our applicants personally through our <a href="https://discord.gg/drDFrCJ" target="_BLANK">public Discord server</a>. This is also where we get to hangout with other FOLs (fans of LEGO) through the chat and the voice call channel. You can join by clicking “connect” on the Discord panel to the right.</p>
+                    <p>In addition to reviewing your written application and submitted MOCs, we like to get to know our applicants personally through our <a href="https://discord.gg/drDFrCJ" target="_BLANK">public Discord server</a>. This is also where we get to hangout with other FOLs (fans of LEGO) through the chat and the voice call channel. You can join by clicking “connect” on the Discord panel.</p>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <iframe src="https://discordapp.com/widget?id=263492519277494272&theme=dark" width="auto" height="400" allowtransparency="true" frameborder="0"></iframe>
@@ -26,7 +26,7 @@ include SITE_ROOT . "/includes/header.php"
                 <h2>How To Apply</h2>
                     <ul>
                         <li>Fill out and submit the form at the bottom of this page.</li>
-                        <li>Join our public Discord server by clicking "connect" on the Discord panel to the right.</li>
+                        <li>Join our public Discord server by clicking "connect" on the Discord panel.</li>
                     </ul>
                     <h2>What We're Looking For</h2>
                     <ul>
