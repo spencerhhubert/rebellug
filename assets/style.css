@@ -256,7 +256,7 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
     object-fit: cover;
     object-position: 50% 50%;
     width: 80%;
-    height: 700px;
+    max-height: 700px;
 }
 
 .collaboration .youtube-video {
