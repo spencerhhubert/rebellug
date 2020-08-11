@@ -15,14 +15,20 @@ function printMemberModule($count, $name, $handle, $title, $description, $bio, $
     }
 
     print_r('    
-            <div class="row justify-content-center">
-                <div class="imageContainer">
+            <div class="row">
+                <div class="col imageContainer" align="center">
                     <img src="/images/members/' . $pfp . '" alt="' . $handle . ' Profile Picture">
                 </div>
             </div>'
     );
 
-    printMemberSocial($member_ID);
+    print_r('
+    <div class="row">
+        <div class="col" align="center">
+            ' . memberSocial($member_ID) . '
+        </div>
+    </div>'
+);
 
     print_r('
         </div>
