@@ -142,7 +142,6 @@ function printByline($memberID) {
 
 function printSlideshow($className, $pics, $title) {
     global $count;
-    $count = 0;
     $count++;
     $numOfPics = 0;
     foreach ($pics as $pic) {

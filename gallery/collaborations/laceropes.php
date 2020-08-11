@@ -16,6 +16,7 @@ include SITE_ROOT . "/includes/header.php";
                 <p>Thank you to <a href="https://www.youtube.com/watch?v=bbZJlaef8_w" target="_blank">Beyond the Brick for covering the collaboration</a> and interviewing us as well!</p>
             </div>
             <hr>
+
             <div class="row build">
                 <div class="col-md-7">
                     <h2>Base Camp</h2>
@@ -32,7 +33,25 @@ include SITE_ROOT . "/includes/header.php";
                     </div>
                 </div>
             </div>
+
             <hr>
+
+            <div class="row build">
+                <div class="col-md-7">
+                    <h2>Monotonous March</h2>
+                    <?php printByline(8) ?>
+                    <p>Command Log Entry 0002</p>
+                    <p>“The data analysts pointed toward a monk temple 16 klicks north. We’ll need to keep extreme cover throughout our probe, so we have quite a long walk ahead of us. The reason for this campaign has become more apparent as we’ve traveled. These lacertosus crystals are everywhere, mostly located in ravines that run like veins across the planet’s surface. Chancellor Palpatine personally made it clear that mining them and the taking control of the planet’s capitol was necessary to the war effort. We were cleared to execute natives under any circumstances.”</p>
+                </div>
+                <div class="col-md-5">
+                    <iframe src="https://www.youtube.com/embed/FfIQJ4UPNW4" class="youtube-video"></iframe>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <?php printSlideshow("collaboration", array('noah laceropes white background.jpg', '_DSC4119.JPG', '_DSC4448.JPG', '_DSC4451.JPG', '_DSC4456.JPG', '_DSC4461.JPG', '_DSC4469.JPG'), 'H2Brick Laceropes Build "Base Camp"');?>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
