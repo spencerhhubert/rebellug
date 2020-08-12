@@ -250,7 +250,8 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
 
 .collaboration .logo {
     margin: 20px 0 25px 0;
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
 }
 
 .collaboration-slideshow img {
@@ -268,6 +269,8 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
 
 .collaboration .moc-image {
     width: 100%;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .youtube-video {

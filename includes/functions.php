@@ -149,10 +149,18 @@ function printFlickrFeed() {
     return $output;
 }
 
-function printCollaborationBuilds01($builds, $builders, $buildImages, $folder) {
+function printCollaborationBuilds01($title, $builder_ID, $buildImage, $folder) {
     $output = "";
-    for ($i = 0; $i < count($builds); $i++) {
-        $output = $output . '<hr> <div class="row build"> <div class="col"> <h2>' . $builds[$i] . '</h2>' . byline($builders[$i]) . '<img src="images/' . $folder . $buildImages[$i] . '" class="moc-image"> </div> </div>';
+    for ($i = 0; $i < count($title); $i++) {
+        $output = $output . '<hr> <div class="row build"> <div class="col"> <h2>' . $title[$i] . '</h2>' . byline($builder_ID[$i]) . '<img src="images/' . $folder . $buildImage[$i] . '" class="moc-image"> </div> </div>';
+    }
+    return $output;
+}
+
+function printCollaborationBuilds02($title, $builder_ID, $description, $video_ID) {
+    $output = "";
+    for ($i = 0; $i < count($title); $i++) {
+        $output = $output . '<hr> <div class="row build"> <div class="col"> <h2>' . $title[$i] . '</h2>' . byline($builder_ID[$i]) . '<p>' . $description[$i] . '</p> </div> <div class="col-md-5"> <iframe src="https://www.youtube.com/embed/' . $video_ID[$i] . '" class="youtube-video"></iframe> </div> </div>';
     }
     return $output;
 }
