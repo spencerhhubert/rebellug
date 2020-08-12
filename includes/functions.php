@@ -164,3 +164,11 @@ function printCollaborationBuilds02($title, $builder_ID, $description, $video_ID
     }
     return $output;
 }
+
+function printCollaborationBuilds03($title, $builder_ID, $video_ID) {
+    $output = "";
+    for ($i = 0; $i < count($title); $i++) {
+        $output = $output . '<hr> <div class="row build"> <div class="col"> <h2>' . $title[$i] . '</h2>' . byline($builder_ID[$i]) . '</div> <div class="col-md-5"> <iframe src="https://www.youtube.com/embed/' . $video_ID[$i] . '" class="youtube-video"></iframe> </div> </div>';
+    }
+    return $output;
+}

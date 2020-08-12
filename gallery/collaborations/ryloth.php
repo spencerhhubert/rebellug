@@ -9,7 +9,6 @@ include SITE_ROOT . "/includes/header.php";
         <div class="box collaboration">
             <div class="text-center">
                 <h1 class="header">Cargo Rush on Ryloth</h1>
-                <img src="images/clonesalonelogogray.png" class="logo">
                 <p>Brickworld 2016 was the first time RebelLUG met in person and displayed together at a convention under the RebelLUG name and banner. Our collaboration that year was called "Attack on Ryloth," a scene depicted the Empire trying to take over a town on Ryloth and some Rebel soldiers trying to defend it. It was nominated for Best Group Layout. It was also sponsored by Arealight, who gave us the custom Twi'lek heads. Lego Buff Productions, Kris Productions, LegoSpencer, alcloneproductions, Daniel Barwegen, and LegoLord82 worked on this project.</p>
                 <iframe width="100%" height="400" src="https://www.youtube.com/embed/YBGCsYkagxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Also thank you to Beyond the Brick for interviewing us about this MOC!</p>
