@@ -1,6 +1,6 @@
 <?php
 include "../../config.php";
-$title = "Clones Alone";
+$title = "Order 66";
 include SITE_ROOT . "/includes/header.php";
 
 $titles = array(

@@ -172,3 +172,11 @@ function printCollaborationBuilds03($title, $builder_ID, $video_ID) {
     }
     return $output;
 }
+
+function printCollaborationBuilds04($title, $builder_ID, $instagram) {
+    $output = "";
+    for ($i = 0; $i < count($title); $i++) {
+        $output = $output . '<hr> <div class="row build"> <div class="col"> <h2>' . $title[$i] . '</h2>' . byline($builder_ID[$i]) . '</div> <div class="col-md-6">' . $instagram[$i] . '</div> </div>';
+    }
+    return $output;
+}
