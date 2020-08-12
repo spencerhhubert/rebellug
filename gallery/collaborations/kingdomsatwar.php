@@ -9,7 +9,7 @@ $titles = array(
     'Chapter -3- [BLUE] "Attack on Arionar Village"',
     'Chapter -4- [RED] "Fortress of Batonn"',
     'Chapter -5- [BLUE] "Storming Outpost Wineethel”',
-    'Chapter -6- [RED] "Raid on the kingdom outskirts"',
+    'Chapter -6- [RED] "Raid on the Kingdom Outskirts"',
     'Chapter -7- [BLUE] "Betrayal of Stone Lord in the Ruins of the Castshire Citadel"',
     'Chapter -8- [RED] "Ambush on the Solveig Outskirts"',
     'Chapter -9- [BLUE] "Ambush on the Lothurien River"',

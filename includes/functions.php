@@ -180,3 +180,11 @@ function printCollaborationBuilds04($title, $builder_ID, $instagram) {
     }
     return $output;
 }
+
+function printCollaborationBuilds05($build_image, $folder) {
+    $output = "";
+    for ($i = 0; $i < count($build_image); $i++) {
+        $output = $output . '<hr> <div class="row build"> <div class="col imageContainer"> <img src="images/' . $folder . $build_image[$i] . '" class="moc-image"> </div> </div>';
+    }
+    return $output;
+}
