@@ -10,7 +10,7 @@ include SITE_ROOT . "/includes/header.php";
             <?php echo contestOverAlert(); ?>
             <div class="text-center">
                 <h1 class="header">Vignweek 2020</h1>
-                <img src="images/vignweek2020.jpg">
+                <img src="images/vignweek2020.jpg" class="logo">
             </div>
             <h2>The Challenge</h2>
             <ul>
@@ -33,7 +33,7 @@ include SITE_ROOT . "/includes/header.php";
                 <li>Submit your build before 24 hours has passed from the prompt’s release (48 hours for the last prompt). <b>This is a firm deadline!</b></li>
             </ul>
 
-            <h1>The Results</h1>
+            <h2>The Results</h2>
             <ul>
             <li><b>First Place: <a href=https://www.flickr.com/photos/98322162@N04/ target=_blank>jaapxaap</a></b>
                 <ul>
