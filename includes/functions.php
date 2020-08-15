@@ -188,3 +188,12 @@ function printCollaborationBuilds05($build_image, $folder) {
     }
     return $output;
 }
+
+function contestOverAlert() {
+    $output = '
+    <div class="alert alert-danger" role="alert">
+    This contest has already ended!
+    </div>
+    ';
+    echo $output;
+}
