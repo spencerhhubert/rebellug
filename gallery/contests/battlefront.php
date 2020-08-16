@@ -21,4 +21,4 @@ include SITE_ROOT . "/includes/header.php";
     </div>
 </div>
 
-<?php include SITE_ROOT . "/includes/footer.php" ?>Battlefront
+<?php include SITE_ROOT . "/includes/footer.php" ?>
