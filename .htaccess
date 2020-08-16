@@ -1,3 +1,4 @@
+AllowOverride All
 DirectoryIndex index.php
 
 RewriteEngine On
