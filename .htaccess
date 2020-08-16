@@ -1,16 +1,16 @@
-AllowOverride All
-DirectoryIndex index.php
+#AllowOverride All
+#DirectoryIndex index.php
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-<IfModule mod_rewrite.c>
+#<IfModule mod_rewrite.c>
 
-RewriteEngine On
+#RewriteEngine On
 # Send would-be 404 requests to Craft
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
-RewriteRule (.+) index.php?p=$1 [QSA,L]
-</IfModule>
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
+#RewriteRule (.+) index.php?p=$1 [QSA,L]
+#</IfModule>
