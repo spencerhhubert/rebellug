@@ -1,7 +1,7 @@
 <?php
     $navItems = array(
         array(
-            "slug" => "/index",
+            "slug" => "/",
             "dirname" => "",
             "title" => "RebelLUG",
             "name" => "Home"
