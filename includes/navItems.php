@@ -17,13 +17,13 @@
             "name" => "Gallery",
             "dropdownItems" => array(
                 array(
-                    "slug" => "/gallery/collaborations/index",
+                    "slug" => "/gallery/collaborations",
                     "dirname" => "/gallery/collaborations",
                     "title" => "Collaborations",
                     "name" => "Collaborations"
                 ),
                 array(
-                    "slug" => "/gallery/contests/index",
+                    "slug" => "/gallery/contests",
                     "dirname" => "/gallery/contests",
                     "title" => "Contests",
                     "name" => "Contests"
@@ -31,7 +31,7 @@
             )
         ),
         array(
-            "slug" => "/instructions/index",
+            "slug" => "/instructions",
             "dirname" => "/instructions",
             "title" => "Instructions",
             "name" => "Instructions"
