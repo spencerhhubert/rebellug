@@ -22,6 +22,16 @@ body {
     line-height: 1.75em;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: var(--default-orange);
+}
+
+::selection {
+    color: white;
+    background: var(--default-orange);
+}
+
 strong, b {
     color: #252122;
     font-weight: 400;
@@ -193,16 +203,32 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
     max-height: 500px;
 }
 
-.members img {
-    object-fit: cover;
-    object-position: 50% 50%;
-    border-radius: 50%;
-    width: 100%;
-    max-width: 250px;
-}
-
 .members .imageContainer {
     width: 100%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.members .imageContainer .the-man {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background-color: gray;
+}
+
+.members img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
 /* For Safari bug that isn't a bug */
