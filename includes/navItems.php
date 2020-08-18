@@ -31,7 +31,7 @@
             )
         ),
         array(
-            "slug" => "/instructions/",
+            "slug" => "/instructions",
             "dirname" => "/instructions",
             "title" => "Instructions",
             "name" => "Instructions"
