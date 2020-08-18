@@ -16,7 +16,7 @@ function printInstructionsModule($title, $builder_name, $builder_handle, $price,
                 </form>
                 <p>' . $builder_name . ' - ' . $builder_handle . '</p>
                 <p><b>$' . $price . ' USD</b></p>
-                <a href="/' . slugify($title) . '"><p>Test link</p></a>
+                <a href="/instructions/' . slugify($title) . '"><p>Test link</p></a>
                 <form method="get" action="moc.php" class="inline">
                     <input type="hidden" name="id" value="' . $title . '">
                     <button type="submit" class="link-button">
