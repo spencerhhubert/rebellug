@@ -20,7 +20,7 @@ function printInstructionsModule($title, $builder_name, $builder_handle, $price,
                 <form method="get" action="moc.php" class="inline">
                     <input type="hidden" name="id" value="' . $title . '">
                     <button type="submit" class="link-button">
-                        <a href="#"><img src="images/' . $pic_main . '"></a>
+                        <a href="#"><img src="instructions/images/' . $pic_main . '"></a>
                     </button>
                 </form> 
             </div> 
