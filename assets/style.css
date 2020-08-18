@@ -229,6 +229,15 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
     top: 0;
     left: 0;
     object-fit: cover;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /* For Safari bug that isn't a bug */
