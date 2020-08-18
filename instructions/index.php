@@ -1,28 +1,20 @@
 <?php
-function slugify($string) {
-    $string = preg_replace('/\s+/', '+', $string);
-    return $string;
-}
 
-function printInstructionsModule($title, $builder_name, $builder_handle, $price, $pic_main) {
+function printInstructionsModule($title, $builder_id, $price, $pic_0) {
     print_r('
         <div class="col-md-4 col-md">
             <div class="gallery-item">
                 <form method="get" action="moc.php" class="inline">
                     <input type="hidden" name="id" value="' . $title . '">
                     <button type="submit" class="link-button" style="width: 100%;">
-                        <a href="#"><h3>' . $title . '</h3></a>
+                        <a href="/instructions/' . slugify($title) . '"><h3>' . $title . '</h3></a>
                     </button>
                 </form>
-                <p>' . $builder_name . ' - ' . $builder_handle . '</p>
+                <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>
                 <p><b>$' . $price . ' USD</b></p>
-                <a href="/instructions/' . slugify($title) . '"><p>Test link</p></a>
-                <form method="get" action="moc.php" class="inline">
-                    <input type="hidden" name="id" value="' . $title . '">
-                    <button type="submit" class="link-button">
-                        <a href="#"><img src="/instructions/images/' . $pic_main . '"></a>
-                    </button>
-                </form> 
+                <a href="/instructions/' . slugify($title) . '">
+                    <img src="/instructions/images/' . $pic_0 . '">
+                </a>
             </div> 
         </div>
     ');
@@ -42,11 +34,10 @@ include SITE_ROOT . "/includes/header.php";
                     if ($resultCheck > 0) {
                         while ($row = mysqli_fetch_assoc($result)) {
                             $title = $row['title'];
-                            $builder_name = $row['builder_name'];
-                            $builder_handle = $row['builder_handle'];
+                            $builder_id = $row['builder_id'];
                             $price = $row['price'];
-                            $pic_main = $row['pic_main'];
-                            printInstructionsModule($title, $builder_name, $builder_handle, $price, $pic_main);
+                            $pic_0 = $row['pic_0'];
+                            printInstructionsModule($title, $builder_id, $price, $pic_0);
                         }
                     } else {
                         echo "There was an error loading the instructions";
