@@ -59,10 +59,10 @@ include SITE_ROOT . "/includes/header.php";
             print_r('
             <div class="carousel-inner instructions-slideshow">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/' . $pics[0] . '" alt="First slide">
+                    <img class="d-block w-100" src="images/' . $pics[0] . '" alt="LEGO ' . $title . '">
                 </div>
             ');
-            for ($i = 1; $i <= $numOfPics; $i++) {
+            for ($i = 1; $i <= $numOfPics - 1; $i++) {
                 print_r('
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/' . $pics[$i] . '" alt="LEGO ' . $title . '">
@@ -90,7 +90,7 @@ include SITE_ROOT . "/includes/header.php";
                 <div class="col-auto">
                     <div class="row justify-content-center">
                         <div class="col-auto">
-                            <h3 style="font-size: 2em;">$' . $price . '</h3>
+                            <h3 style="font-size: 2em;" class="header">$' . $price . '</h3>
                         </div>
                     </div>
 

@@ -59,7 +59,7 @@ h3 {
     font-size: 1.35em;
 }
 
-h1.header, h2.header {
+h1.header, h2.header, h3.header {
     font-weight: 900;
     font-size: 2em;
     letter-spacing: -0.035em;
@@ -280,7 +280,6 @@ a:hover img, a:hover .fa, a:hover .fab, a:hover .fas, a:hover p, a:hover h1, a:h
     object-fit: cover;
     object-position: 50% 50%;
     width: 100%;
-    height: 600px;
 }
 
 .collaboration .logo {
