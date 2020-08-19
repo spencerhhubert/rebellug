@@ -4,12 +4,9 @@ function printInstructionsModule($title, $builder_id, $price, $pic_0) {
     print_r('
         <div class="col-md-4 col-md">
             <div class="gallery-item">
-                <form method="get" action="moc.php" class="inline">
-                    <input type="hidden" name="id" value="' . $title . '">
-                    <button type="submit" class="link-button" style="width: 100%;">
-                        <a href="/instructions/' . slugify($title) . '"><h3>' . $title . '</h3></a>
-                    </button>
-                </form>
+                <a href="/instructions/' . slugify($title) . '">
+                    <h3>' . $title . '</h3>
+                </a>
                 <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>
                 <p><b>$' . $price . ' USD</b></p>
                 <a href="/instructions/' . slugify($title) . '">
