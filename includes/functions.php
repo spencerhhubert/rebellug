@@ -199,6 +199,6 @@ function contestOverAlert() {
 }
 
 function slugify($string) {
-    $string = preg_replace('/\s+/', '+', $string);
+    $string = preg_replace('/\s+/', '-', $string);
     return $string;
 }
