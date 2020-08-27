@@ -4,15 +4,15 @@ include 'config.php';
 
 set_time_limit(10000);
 
-$compress_images = true;
-$resize_images = false;
+$compress_images = false;
+$resize_images = true;
 
 $tinyify_API_KEY = getenv("tinyify_API_key");
 require_once(SITE_ROOT . '/vendor/autoload.php');
 \Tinify\setKey($tinyify_API_KEY);
 
-$dir = 'images/groupshots/';
-$dirUncompressed = $dir . 'a/';
+$dir = 'gallery/collaborations/images/';
+$dirUncompressed = $dir . 'uncompressed-thumbnails/';
 $images = scandir($dirUncompressed);
 $images = array_diff($images, array('.', '..'));
 
@@ -29,7 +29,7 @@ if ($resize_images == true) {
         $source = \Tinify\fromFile($dirUncompressed.$image);
         $resized = $source->resize(array(
             "method" => "scale",
-            "width" => 1920
+            "width" => 500
         ));
         $resized->toFile($dir.$image);
     }
