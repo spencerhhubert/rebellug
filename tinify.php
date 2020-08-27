@@ -11,8 +11,8 @@ $tinyify_API_KEY = getenv("tinyify_API_key");
 require_once(SITE_ROOT . '/vendor/autoload.php');
 \Tinify\setKey($tinyify_API_KEY);
 
-$dir = 'images/members/';
-$dirUncompressed = $dir . 'b/';
+$dir = 'images/groupshots/';
+$dirUncompressed = $dir . 'a/';
 $images = scandir($dirUncompressed);
 $images = array_diff($images, array('.', '..'));
 
@@ -28,11 +28,10 @@ if ($resize_images == true) {
     foreach ($images as $image) {
         $source = \Tinify\fromFile($dirUncompressed.$image);
         $resized = $source->resize(array(
-            "method" => "cover",
-            "width" => 500,
-            "height" => 500
+            "method" => "scale",
+            "width" => 1920
         ));
         $resized->toFile($dir.$image);
     }
-    echo "Images rezied";
+    echo "Images resized";
 }
