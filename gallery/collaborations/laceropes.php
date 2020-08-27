@@ -20,7 +20,7 @@ include SITE_ROOT . "/includes/header.php";
             <div class="row build">
                 <div class="col-md-7">
                     <h2>Base Camp</h2>
-                    <?php echo byline(4) ?>
+                    <?php echo byline(5) ?>
                     <p>Command Log Entry 0001</p>
                     <p>“Validus squad landed on Laceropes and met up with the base camp a little over two hours ago. The Republic’s campaign on Laceropes has been underway for over two standard weeks and we’re headed to their base, located in a small town in what seems to be the remains of a temple. The mission summary stated the natives of Laceropes, groups of monks, had different factions defending them in this conflict. It’s believed that a Republic admiral, Admiral Oris Ski, was captured by a group of native allies and he’s potentially being tortured for information. Our mission is to bring him home or find out if he was killed.”</p>
                 </div>

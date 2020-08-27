@@ -8,7 +8,7 @@ function printMemberModule($count, $name, $handle, $title, $description, $bio, $
     <div class="row person">
     ');
 
-    if ($isHighCommand == 1) {
+    if ($isHighCommand == "true") {
         print_r('<div class="col-md-3">');
     } else {
         print_r('<div class="col-md-2">');
@@ -34,7 +34,7 @@ function printMemberModule($count, $name, $handle, $title, $description, $bio, $
     print_r('
         </div>
         ');
-        if ($isHighCommand == 1) {
+        if ($isHighCommand == "true") {
             print_r('<div class="col-md-9">');
         } else {
             print_r('<div class="col-md-10">');
@@ -60,7 +60,7 @@ function printMemberModule($count, $name, $handle, $title, $description, $bio, $
         <div class="box">
             <div class="row justify-content-center members highCommand">
                 <?php
-                    $result = mysqli_query($conn, "SELECT * FROM members WHERE isMember=1 AND isHighCommand=1 ORDER BY manualOrder");
+                    $result = mysqli_query($conn, "SELECT * FROM members WHERE isMember='true' AND isHighCommand='true' ORDER BY manualOrder");
                     $resultCheck = mysqli_num_rows($result);
                     
                     if ($resultCheck > 0) {
@@ -96,7 +96,7 @@ function printMemberModule($count, $name, $handle, $title, $description, $bio, $
         <div class="box">
             <div class="row justify-content-center members">
                 <?php
-                    $result = mysqli_query($conn, "SELECT * FROM members WHERE isMember=1 AND isHighCommand=0 ORDER BY handle");
+                    $result = mysqli_query($conn, "SELECT * FROM members WHERE isMember='true' AND isHighCommand='false' ORDER BY handle");
                     $resultCheck = mysqli_num_rows($result);
                     
                     if ($resultCheck > 0) {
