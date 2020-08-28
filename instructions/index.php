@@ -32,7 +32,7 @@ include SITE_ROOT . "/includes/header.php";
                     <p>Thank you for helping support our builders and our group!</p>
                 </div>
                 <?php
-                    $result = mysqli_query($conn, "SELECT * FROM instructions where display='true' ORDER BY manual_order ASC, title;");
+                    $result = mysqli_query($conn, "SELECT * FROM instructions where display='true' ORDER BY manual_order ASC, title ASC");
                     $resultCheck = mysqli_num_rows($result);
 
                     if ($resultCheck > 0) {
