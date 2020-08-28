@@ -1,10 +1,10 @@
 <?php
 
-function printInstructionsModule($title, $builder_id, $price, $pic_0) {
+function printInstructionsModule($id, $title, $builder_id, $price, $pic_0) {
     print_r('
         <div class="col-md-4 col-md">
             <div class="gallery-item">
-                <a href="/instructions/' . slugify($title) . '">
+                <a href="/instructions/moc.php?id=' . $id . '">
                     <h3>' . $title . '</h3>
                 </a>
                 <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>
@@ -37,11 +37,12 @@ include SITE_ROOT . "/includes/header.php";
 
                     if ($resultCheck > 0) {
                         while ($row = mysqli_fetch_assoc($result)) {
+                            $id = $row['id'];
                             $title = $row['title'];
                             $builder_id = $row['builder_id'];
                             $price = $row['price'];
                             $pic_0 = $row['pic_0'];
-                            printInstructionsModule($title, $builder_id, $price, $pic_0);
+                            printInstructionsModule($id, $title, $builder_id, $price, $pic_0);
                         }
                     } else {
                         echo "There was an error loading the instructions";
