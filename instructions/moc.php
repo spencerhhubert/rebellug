@@ -107,7 +107,7 @@ include SITE_ROOT . "/includes/header.php";
                 ');
     
                 print_r('</div>');
-                print_r('<p>' . $description . '</p>');
+                print_r('<p style="margin-top: 15px;">' . $description . '</p>');
     
                 print_r('
                 <div class="row justify-content-center" style="margin-bottom: 25px;">
