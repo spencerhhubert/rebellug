@@ -10,7 +10,7 @@ function printInstructionsModule($id, $title, $builder_id, $price, $pic_0) {
                 <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>
                 <p><b>$' . $price . ' USD</b></p>
                 <a href="/instructions/' . slugify($title) . '">
-                    <img src="/instructions/images/' . $pic_0 . '">
+                    <img src="/instructions/images/' . $pic_0 . '" loading="lazy">
                 </a>
             </div> 
         </div>
