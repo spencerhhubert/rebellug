@@ -4,7 +4,7 @@ function printInstructionsModule($id, $title, $builder_id, $price, $pic_0) {
     print_r('
         <div class="col-md-4 col-md">
             <div class="gallery-item">
-                <a href="/instructions/moc.php?id=' . $id . '">
+                <a href="/instructions/' . slugify($title) . '">
                     <h3>' . $title . '</h3>
                 </a>
                 <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>
