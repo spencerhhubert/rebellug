@@ -139,7 +139,7 @@ function printFlickrFeed() {
 
         $biggerImageLink = substr_replace($flickrFeed->items[$i]->media->m, "z", -5, 1);
 
-        $output = $output . '<div class="col-md-3 col-xs-4 imageContainer"><a href="' . $flickrFeed->items[$i]->link. '" target="_blank"><img src="' . $biggerImageLink . '"></a></div>';
+        $output = $output . '<div class="col-md-3 col-xs-4 imageContainer"><a href="' . $flickrFeed->items[$i]->link. '" target="_blank"><img src="' . $biggerImageLink . '" loading="lazy"></a></div>';
         // if ((($i + 1) % 4) == 0) {
         //     $output = $output . '</div>';
         // }
