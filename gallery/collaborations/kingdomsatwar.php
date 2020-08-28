@@ -1,6 +1,6 @@
 <?php
 include "../../config.php";
-$title = "So Uncivilized";
+$title = "Kingdoms at War";
 include SITE_ROOT . "/includes/header.php";
 
 $titles = array(
@@ -25,24 +25,24 @@ $titles = array(
 );
 
 $builder_IDs = array(
+    62,
+    55,
+    54,
+    50,
+    43,
+    67,
+    57,
+    40,
+    14,
+    55,
+    64,
+    51,
+    60,
+    63,
+    47,
+    35,
     1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
+    50,
     1
 );
 
