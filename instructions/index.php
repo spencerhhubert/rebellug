@@ -1,6 +1,6 @@
 <?php
 
-function printInstructionsModule($id, $title, $builder_id, $price, $pic_0) {
+function printInstructionsModule($id, $title, $builder_id, $price, $thumbnail) {
     print_r('
         <div class="col-md-4 col-md">
             <div class="gallery-item instructions">
@@ -10,7 +10,7 @@ function printInstructionsModule($id, $title, $builder_id, $price, $pic_0) {
                 <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>
                 <p><b>$' . $price . ' USD</b></p>
                 <a href="/instructions/' . slugify($title) . '">
-                    <img src="/instructions/images/' . $pic_0 . '" loading="lazy">
+                    <img src="/instructions/images/' . $thumbnail . '" loading="lazy">
                 </a>
             </div> 
         </div>
@@ -41,8 +41,8 @@ include SITE_ROOT . "/includes/header.php";
                             $title = $row['title'];
                             $builder_id = $row['builder_id'];
                             $price = $row['price'];
-                            $pic_0 = $row['pic_0'];
-                            printInstructionsModule($id, $title, $builder_id, $price, $pic_0);
+                            $thumbnail = $row['thumbnail'];
+                            printInstructionsModule($id, $title, $builder_id, $price, $thumbnail);
                         }
                     } else {
                         echo "There was an error loading the instructions";
