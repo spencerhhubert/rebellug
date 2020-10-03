@@ -23,14 +23,21 @@ include SITE_ROOT . "/includes/header.php";
 <div class="content">
     <div class="container">
         <div class="box">
-            <div class="row">
-                <div class="text-center collaboration">
-                    <h1 class="header">The RebelLUG LEGO MOC Instructions Store</h1>
-                    <img src="instructions/images/rebellug-instructions-store-logo.png" class="logo">
-                    <p>RebelLUG members often get requests for instructions to their custom LEGO® models. We're happy to announce that those are finally available here on the RebelLUG website.</p>
-                    <p>The ordering process is simple. By clicking the photos of the builds, you can find more information about each model, including more pictures, videos, and a complete parts list. To purchase a set of instructions, you can use any of the PayPal options near the bottom of each models' page. Immediately following your purchase, you will recieve a PDF copy of the instructions to the email linked with your PayPal. If you have any questions, feel free to contact us via email at <a href="mailto: rebellegousergroup@gmail.com">rebellegousergroup@gmail.com</a>.</p>
-                    <p>Thank you for helping support our builders and our group!</p>
+            <div class="collaboration">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4 justify-content-center d-none d-md-block">
+                    <img src="instructions/images/gunship_banner_promo.jpg" width=100%>
+                    <img src="instructions/images/rebellug-instructions-store-logo.png" style="position: absolute; width: 80%; left: 10%; top: 15px;">
                 </div>
+                <div class="col-md-7 col-lg-8">
+                <h1 class="header">The RebelLUG Instructions Store</h1>
+                    <p>RebelLUG members often get requests for instructions to their custom LEGO® models, and here we're excited to make them available!</p>
+                    <p>These can be advanced models, often meant for display only, but each instruction manual is vetted to ensure clear and concise quality building directions.</p>
+                    <p>Upon completing the payment process via PayPal, a PDF file containing the instructions will be emailed to you. A full parts list is also publically available for each build.</p>
+                </div>
+            </div>
+            </div>
+            <div class="row" style="margin-top: 15px;">
                 <?php
                     $result = mysqli_query($conn, "SELECT * FROM instructions where display='true' ORDER BY manual_order IS NUll, manual_order ASC, title ASC");
                     $resultCheck = mysqli_num_rows($result);
