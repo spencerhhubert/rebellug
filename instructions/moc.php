@@ -54,13 +54,15 @@ include SITE_ROOT . "/includes/header.php";
                     8 => $row['pic_8'],
                     9 => $row['pic_9']
                 );
+                $isC4C = $row['isC4C'];
+                $C4CPercent = $row['C4CPercent'];
+
     
                 $numOfPics = 0;
                 foreach ($pics as $pic) {
                     if ($pic != null) {
                         $numOfPics++;
                     }
-    
                 }
     
                 print_r('
@@ -107,6 +109,24 @@ include SITE_ROOT . "/includes/header.php";
                 ');
     
                 print_r('</div>');
+
+                if ($isC4C) {
+                    print_r('
+                        <hr>
+                            <div class="row align-items-center">
+                                <div class="col-md-auto text-center">
+                                    <img src="/instructions/images/creations_for_charity_logo_big.png">
+                                </div>
+                                <div class="col">
+                                    <h3 style="margin-top: 8px;">' . $C4CPercent . '% of this purchase goes towards <a href="https://www.creationsforcharity.org/" style="color: orange;" target="_BLANK">Creations for Charity</a>!</h3>
+                                    <p>This charity run offer lasts until ?</p>
+                                    <p>Creations for Charity is an annual fundraiser whose proceeds go towards buying LEGO sets for underprivileged kids during the holidays.</p>
+                                </div>
+                            </div>
+                        <hr>
+                    ');
+                }
+
                 print_r('<p style="margin-top: 15px;">' . $description . '</p>');
     
                 print_r('
