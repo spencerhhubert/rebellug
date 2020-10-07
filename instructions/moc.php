@@ -119,7 +119,7 @@ include SITE_ROOT . "/includes/header.php";
                                 </div>
                                 <div class="col">
                                     <h3 style="margin-top: 8px;">' . $C4CPercent . '% of this purchase goes towards <a href="https://www.creationsforcharity.org/" style="color: orange;" target="_BLANK">Creations for Charity</a>!</h3>
-                                    <p>This charity run offer lasts until ?</p>
+                                    <p>This charity run offer lasts until November 30, 2020.</p>
                                     <p>Creations for Charity is an annual fundraiser whose proceeds go towards buying LEGO sets for underprivileged kids during the holidays.</p>
                                 </div>
                             </div>
