@@ -332,11 +332,22 @@ button {
 }
 
 .c4c {
+    position: relative;
+}
+
+.c4c img {
     width: 60px;
     top: -10px;
     left: -10px;
     position: absolute;
     z-index: 10;
+}
+
+.c4c h6 {
+    color: yellow;
+    position: absolute;
+    z-index: 11;
+    top: -3px;
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */

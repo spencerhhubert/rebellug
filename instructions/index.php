@@ -10,16 +10,21 @@ function printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $
                 </a>
                 <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>
                 <p><b>$' . $price . ' USD</b></p>
-                <div style="position: relative;">
-                    <a href="/instructions/' . slugify($title) . '">';
+                <div style="position: relative;">';
 
     if ($isC4C) {
         $output = $output . '
-            <img src="/instructions/images/creations_for_charity_logo_small.png" class="c4c">
+            <div class="c4c">
+                <img src="/instructions/images/creations_for_charity_logo_small.png" class="c4c">
+        ';
+        $output = $output . '
+                <h6>' . $C4CPercent . '%<h6>
+            </div>
         ';
     }
                 
     $output = $output . '
+                    <a href="/instructions/' . slugify($title) . '">
                         <img src="/instructions/images/' . $thumbnail . '" loading="lazy">
                     </a>
                 </div>
