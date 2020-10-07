@@ -331,6 +331,14 @@ button {
     padding: 5px 15px;
 }
 
+.c4c {
+    width: 60px;
+    top: -10px;
+    left: -10px;
+    position: absolute;
+    z-index: 10;
+}
+
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 }

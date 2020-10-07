@@ -1,7 +1,8 @@
 <?php
 
-function printInstructionsModule($id, $title, $builder_id, $price, $thumbnail) {
-    print_r('
+function printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $isC4C, $C4CPercent) {
+    $output = "";
+    $output = $output . '
         <div class="col-md-4 col-md">
             <div class="gallery-item instructions">
                 <a href="/instructions/' . slugify($title) . '">
@@ -9,12 +10,23 @@ function printInstructionsModule($id, $title, $builder_id, $price, $thumbnail) {
                 </a>
                 <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>
                 <p><b>$' . $price . ' USD</b></p>
-                <a href="/instructions/' . slugify($title) . '">
-                    <img src="/instructions/images/' . $thumbnail . '" loading="lazy">
-                </a>
+                <div style="position: relative;">
+                    <a href="/instructions/' . slugify($title) . '">';
+
+    if ($isC4C) {
+        $output = $output . '
+            <img src="/instructions/images/creations_for_charity_logo_small.png" class="c4c">
+        ';
+    }
+                
+    $output = $output . '
+                        <img src="/instructions/images/' . $thumbnail . '" loading="lazy">
+                    </a>
+                </div>
             </div> 
         </div>
-    ');
+    ';
+    echo $output;
 }
 
 include "../config.php";
@@ -49,7 +61,9 @@ include SITE_ROOT . "/includes/header.php";
                             $builder_id = $row['builder_id'];
                             $price = $row['price'];
                             $thumbnail = $row['thumbnail'];
-                            printInstructionsModule($id, $title, $builder_id, $price, $thumbnail);
+                            $isC4C = $row['isC4C'];
+                            $C4CPercent = $row['C4CPercent'];
+                            printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $isC4C, $C4CPercent);
                         }
                     } else {
                         echo "There was an error loading the instructions";
