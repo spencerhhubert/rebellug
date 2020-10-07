@@ -52,6 +52,17 @@ include SITE_ROOT . "/includes/header.php";
                     <p>These can be advanced models, often meant for display only, but each instruction manual is vetted to ensure clear and concise quality building directions.</p>
                     <p>Upon completing the payment process via PayPal, a PDF file containing the instructions will be emailed to you. A full parts list is also publically available for each build.</p>
                 </div>
+                <div class="row align-items-center" style="border: solid #ccc; border-width: 1px 0px; padding-top: 15px;">
+                    <div class="col-md-auto text-center">
+                        <img src="/instructions/images/creations_for_charity_logo_big.png" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col">
+                        <h3 class="header" style="font-size: 1.5em">Creations for Charity - Gifting LEGO to kids in need</h3>
+                        <p><a href="https://www.creationsforcharity.org/" target="_blank">Creations for Charity</a> is an annual fundraiser whose proceeds go towards buying LEGO sets for underprivileged kids during the holidays.</p>
+                        <p>Varying portions of sales revenue instructions sold here on the RebelLUG store will be donated directly to Creations for Charity.</p>
+                        <p>This charity run offer lasts until <b>November 30, 2020.</b></p>
+                    </div>
+                </div>
             </div>
             </div>
             <div class="row" style="margin-top: 15px;">
