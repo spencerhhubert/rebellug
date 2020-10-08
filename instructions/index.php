@@ -52,7 +52,7 @@ include SITE_ROOT . "/includes/header.php";
                     <p>These can be advanced models, often meant for display only, but each instruction manual is vetted to ensure clear and concise quality building directions.</p>
                     <p>Upon completing the payment process via PayPal, a PDF file containing the instructions will be emailed to you. A full parts list is also publically available for each build.</p>
                 </div>
-                <div class="row align-items-center" style="border: solid rgba(0,0,0,.1); border-width: 1px 0px; padding-top: 15px;">
+                <div class="row align-items-center" style="border: solid rgba(0,0,0,.1); border-width: 1px 0px; padding-top: 15px; margin-top: 25px;">
                     <div class="col-md-auto text-center">
                         <img src="/instructions/images/creations_for_charity_logo_big.png" style="margin-bottom: 10px;">
                     </div>
