@@ -12,7 +12,7 @@ function printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $
                 <p><b>$' . $price . ' USD</b></p>
                 <div style="position: relative;">';
 
-    if ($isC4C) {
+    if ($isC4C == "true") {
         $output = $output . '
             <div class="c4c">
                 <img src="/instructions/images/creations_for_charity_logo_small.png" class="c4c">

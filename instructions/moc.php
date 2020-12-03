@@ -110,7 +110,7 @@ include SITE_ROOT . "/includes/header.php";
     
                 print_r('</div>');
 
-                if ($isC4C) {
+                if ($isC4C == "true") {
                     print_r('
                         <hr>
                             <div class="row align-items-center">
