@@ -77,7 +77,7 @@ include SITE_ROOT . "/includes/header.php";
                             $builder_id = $row['builder_id'];
                             $price = $row['price'];
                             $thumbnail = $row['thumbnail'];
-                            $isC4C = $row['isC4C'];
+                            $isC4C = 'false';
                             $C4CPercent = $row['C4CPercent'];
                             printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $isC4C, $C4CPercent);
                         }

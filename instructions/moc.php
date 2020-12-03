@@ -54,7 +54,7 @@ include SITE_ROOT . "/includes/header.php";
                     8 => $row['pic_8'],
                     9 => $row['pic_9']
                 );
-                $isC4C = $row['isC4C'];
+                $isC4C = 'false';
                 $C4CPercent = $row['C4CPercent'];
 
     
