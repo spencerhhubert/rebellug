@@ -56,12 +56,6 @@ include SITE_ROOT . "/includes/header.php";
                     <div class="col-md-auto text-center">
                         <img src="/instructions/images/creations_for_charity_logo_big.png" style="margin-bottom: 10px;">
                     </div>
-                    <div class="col">
-                        <h3 class="header" style="font-size: 1.5em">Creations for Charity - Gifting LEGO to kids in need</h3>
-                        <p><a href="https://www.creationsforcharity.org/" target="_blank">Creations for Charity</a> is an annual fundraiser whose proceeds go towards buying LEGO sets for underprivileged kids during the holidays.</p>
-                        <p>Varying portions of sales revenue instructions sold here on the RebelLUG store will be donated directly to Creations for Charity.</p>
-                        <p>This charity run offer lasts until <b>November 30, 2020.</b></p>
-                    </div>
                 </div>
             </div>
             </div>
