@@ -53,6 +53,15 @@ include SITE_ROOT . "/includes/header.php"
 
         <div class="box">
             <div class="row justify-content-center center-text">
+                <h2 class="header">The 253rd Legion Mission 20 Public Event</h2>
+                <p><a href="https://www.flickr.com/groups/253rd_legion/pool">The 253rd Elite Legion</a> is a LEGO Star Wars RPG that's normally closed to the public and requires an application. But that's all changing before the RPG's complete reset with Mission 20: "For the Republic!"</p>
+                <p>This public event is open to anyone in the <a href="https://discord.gg/drDFrCJ">RebelLUG FOL Hangout Discord server</a>. There's many exciting prompts to choose from until the mission comes to a close at the end of February.</p>
+                <img src="/images/253rd_mission_20_public_event_poster.jpg" alt="253rd Elite Legion Mission 20 Public Event poster" style="width: 90%; max-width: 500px;">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="row justify-content-center center-text">
                 <h2 class="header">Our Discord Server</h2>
                 <p>RebelLUG also has an active, public Discord server for fans of LEGO (FOLs) to meet each other, talk about LEGO, participate in building challenges, and share work in progress builds for feedback from RebelLUG members and other FOLs.</p>
                 <iframe src="https://discordapp.com/widget?id=263492519277494272&theme=dark" width="500" height="350" allowtransparency="true" frameborder="0"></iframe>
