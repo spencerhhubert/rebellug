@@ -53,6 +53,21 @@ include SITE_ROOT . "/includes/header.php"
 
         <div class="box">
             <div class="row justify-content-center center-text">
+                <h2 class="header">Vignweek 2021</h2>
+                <div class="alert alert-warning" role="alert">
+                    Vignweek 2021 Begins in <?php echo contestBeginsIn("2021-06-14"); ?>
+                </div>
+                <div class="imageContainer">
+                    <a href="/gallery/contests/vignweek2021.php">
+                        <img src="/gallery/contests/images/Vignweek_2021.jpg" alt="Vignweek 2021" style="max-width: 350px;">
+                    </a>
+                </div>
+                <a href="/gallery/contests/vignweek2021.php"><h3>Learn more</h3></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="row justify-content-center center-text">
                 <h2 class="header">Our Discord Server</h2>
                 <p>RebelLUG also has an active, public Discord server for fans of LEGO (FOLs) to meet each other, talk about LEGO, participate in building challenges, and share work in progress builds for feedback from RebelLUG members and other FOLs.</p>
                 <iframe src="https://discordapp.com/widget?id=263492519277494272&theme=dark" width="500" height="350" allowtransparency="true" frameborder="0"></iframe>
