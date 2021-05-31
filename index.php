@@ -52,7 +52,7 @@ include SITE_ROOT . "/includes/header.php"
         </div>
 
         <div class="box">
-            <div class="row justify-content-center center-text">
+            <div class="justify-content-center center-text">
                 <h2 class="header">Vignweek 2021</h2>
                 <div class="imageContainer">
                     <a href="/gallery/contests/vignweek2021.php">
