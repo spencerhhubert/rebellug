@@ -200,9 +200,9 @@ function contestOverAlert() {
 
 function contestBeginsIn($pContestDate) {
     $contestDate = new DateTime($pContestDate);
+    $contestDate = $contestDate->modify('+1 day');
     $today = new DateTime();
     $interval = $today->diff($contestDate);
-    $intervalExtraDay = $interval->modify('+1 day');
     echo $interval->format('%R%a days');
 }
 
