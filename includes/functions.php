@@ -198,6 +198,15 @@ function contestOverAlert() {
     echo $output;
 }
 
+function contestHasNotBegun() {
+    $output = '
+    <div class="alert alert-warning" role="alert">
+    This contest has not begun yet!
+    </div>
+    ';
+    echo $output;
+}
+
 function slugify($text) {
   // replace non letter or digits by -
   $text = preg_replace('~[^\pL\d]+~u', '-', $text);
