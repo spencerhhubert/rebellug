@@ -54,15 +54,14 @@ include SITE_ROOT . "/includes/header.php"
         <div class="box">
             <div class="row justify-content-center center-text">
                 <h2 class="header">Vignweek 2021</h2>
-                <div class="alert alert-warning" role="alert">
-                    Vignweek 2021 Begins in <?php echo contestBeginsIn("2021-06-14"); ?>
-                </div>
                 <div class="imageContainer">
                     <a href="/gallery/contests/vignweek2021.php">
                         <img src="/gallery/contests/images/Vignweek_2021.jpg" alt="Vignweek 2021" style="max-width: 350px;">
                     </a>
                 </div>
-                <a href="/gallery/contests/vignweek2021.php"><h3>Learn more</h3></a>
+                <div class="alert alert-warning" role="alert">
+                    Vignweek 2021 Begins in <?php echo contestBeginsIn("2021-06-14"); ?> days! <a href="/gallery/contests/vignweek2021.php"><h3>Learn more</h3></a>
+                </div>
             </div>
         </div>
 
