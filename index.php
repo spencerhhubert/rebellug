@@ -53,15 +53,6 @@ include SITE_ROOT . "/includes/header.php"
 
         <div class="box">
             <div class="row justify-content-center center-text">
-                <h1 class="header">The 2 Hour Monthly Challenge</h1>
-                <p>Did you know we host a building challenge in our FOL Hangout Discord server every month?</p>
-                <p>Every round we pick a different seed part and then everyone has two hours to use it in a build and share a picture of it. Winners then win points towards a grand prize at the end of the year.</p>
-                <p>Come check it out!</p>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="row justify-content-center center-text">
                 <h2 class="header">Our Discord Server</h2>
                 <p>RebelLUG also has an active, public Discord server for fans of LEGO (FOLs) to meet each other, talk about LEGO, participate in building challenges, and share work in progress builds for feedback from RebelLUG members and other FOLs.</p>
                 <iframe src="https://discordapp.com/widget?id=263492519277494272&theme=dark" width="500" height="350" allowtransparency="true" frameborder="0"></iframe>
