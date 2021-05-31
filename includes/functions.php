@@ -223,3 +223,23 @@ function slugify($text) {
 
   return $text;
 }
+
+function next2HrChallenge($week, $day) {
+    // $week should be an integer starting at 0 for which recurring week the challenge is, for example, 1 would represent the second week of every month
+    // $day should be an integer starting at 0 for the day of that week, for example, $week = 2 and $day = 6 would mean the third Saturday of every month.
+    // returns dateTime object for that day ^
+    $currentMonth = date('m')->format('w');
+    $nextMonth = date('m')->format('w') + 1;
+
+    $paramDayThisMonth;
+    $paramDayNextMonth;
+
+
+    $year = date('Y');
+    $month = date('m');
+    $firstDay = new DateTime("$year-$month-1 0:0:0");
+    $firstDayInteger = $firstDay->format('w');
+    $thirdWednesday = new DateTime();
+    $thirdWednesday->setDate($year, $month, 18 - $firstDayInteger);
+    return $thirdWednesday;
+}
