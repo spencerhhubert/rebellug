@@ -198,10 +198,13 @@ function contestOverAlert() {
     echo $output;
 }
 
-function contestHasNotBegun() {
+function contestBeginsIn(pContestDate) {
+    $contestDate = new DateTime(pContestDate);
+    $today = new DateTime();
+    $interval = $today->diff($contestDate);
     $output = '
     <div class="alert alert-warning" role="alert">
-    This contest has not begun yet!
+    This contest begins in ' . $interval->format('%R%a days') . '
     </div>
     ';
     echo $output;

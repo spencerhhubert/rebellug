@@ -7,7 +7,7 @@ include SITE_ROOT . "/includes/header.php";
 <div class="content">
     <div class="container">
         <div class="box collaboration">
-            <?php echo contestHasNotBegun(); ?>
+            <?php echo contestBeginsIn("2021-06-14"); ?>
             <div class="text-center">
                 <h1 class="header">Vignweek 2021</h1>
                 <img src="images/Vignweek_2021.jpg" class="logo">
