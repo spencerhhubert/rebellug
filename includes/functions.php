@@ -199,7 +199,7 @@ function contestOverAlert() {
 }
 
 function contestBeginsIn($pContestDate) {
-    $contestDate = new DateTime(pContestDate);
+    $contestDate = new DateTime($pContestDate);
     $today = new DateTime();
     $interval = $today->diff($contestDate);
     $output = '
