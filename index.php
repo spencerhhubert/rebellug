@@ -56,7 +56,7 @@ include SITE_ROOT . "/includes/header.php"
                 <h2 class="header">Vignweek 2021</h2>
                 <div class="imageContainer">
                     <a href="/gallery/contests/vignweek2021.php">
-                        <img src="/gallery/contests/images/Vignweek_2021.jpg" alt="Vignweek 2021" style="max-width: 350px;">
+                        <img src="/gallery/contests/images/Vignweek_2021.jpg" alt="Vignweek 2021" style="max-width: 350px; margin-bottom: 25px;">
                     </a>
                 </div>
                 <div class="alert alert-warning" role="alert">
