@@ -202,7 +202,7 @@ function contestBeginsIn($pContestDate) {
     $contestDate = new DateTime($pContestDate);
     $today = new DateTime();
     $interval = $today->diff($contestDate);
-    echo $interval->format('%R%a days');
+    echo $interval->add(1)->format('%R%a days');
 }
 
 function slugify($text) {

@@ -8,7 +8,7 @@ include SITE_ROOT . "/includes/header.php";
     <div class="container">
         <div class="box collaboration">
             <div class="alert alert-warning" role="alert">
-                Vignweek 2021 Begins in <?php echo contestBeginsIn("2021-06-14"); ?>
+                Vignweek 2021 begins in <?php echo contestBeginsIn("2021-06-14"); ?>
             </div>
             <div class="text-center">
                 <h1 class="header">Vignweek 2021</h1>
