@@ -20,3 +20,9 @@ function next_nth_day(day, count) {
 	}
 	return source;
 }
+
+function days_until(date_obj) {
+	let one_day = 24 * 60 * 60 * 1000;
+	let today = new Date();
+	return Math.round(Math.abs((today - date_obj) / one_day));
+}
