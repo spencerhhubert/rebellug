@@ -17,7 +17,6 @@ function next_nth_day(day, count) {
 		source = new Date();
 		source.setMonth(source.getMonth() + 1);
 		loop_month();
-
 	}
 	return source;
 }
