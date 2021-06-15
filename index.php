@@ -60,7 +60,7 @@ include SITE_ROOT . "/includes/header.php"
                     </a>
                 </div>
                 <div class="alert alert-warning" role="alert">
-                    Vignweek 2021 begins in <?php echo contestBeginsIn("2021-06-14"); ?>! <a href="/gallery/contests/vignweek2021">Learn more</a>
+                    Vignweek 2021 is happening right now! <a href="/gallery/contests/vignweek2021">Learn more</a>
                 </div>
             </div>
         </div>
