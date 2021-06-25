@@ -149,7 +149,7 @@ include SITE_ROOT . "/includes/header.php";
 
                 echo '
                 <p>The XML parts list is available <a href="parts/' . $xml_parts_list . '">here</a>. Here is our <a href="https://www.youtube.com/watch?v=nZHHhrKHXPA">video tutorial</a> to import the XML parts list to <a href="https://www.bricklink.com/">Bricklink</a>.</p>
-                <p>Disclaimer: This model may be intended for display purposes. This model is a fan creation and may be fragile compared to official LEGO® sets. This model in no way is intended to imitate any past, present, or future official LEGO® set. © RebelLUG. All rights reserved. LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize, or endorse this product.</p>
+                <p><strong>Disclaimer: Purchase of this product only includes digital instructions to complete the given model. No LEGO®️ pieces or any other physical product is included and no shipment will be completed beyond e-mail delivery of PDF instructions.</strong> This model may be intended for display purposes. This model is a fan creation and may be fragile compared to official LEGO®️ sets. This model in no way is intended to imitate any past, present, or future official LEGO®️ set. ©️ RebelLUG. All rights reserved. LEGO®️ is a trademark of the LEGO Group of companies which does not sponsor, authorize, or endorse this product.</p>
                 ';
             } else {
                 echo "There was an error loading this page.";
