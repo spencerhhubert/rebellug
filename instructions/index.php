@@ -42,8 +42,14 @@ include SITE_ROOT . "/includes/header.php";
         <div class="box">
             <div class="collaboration">
             <div class="row align-items-center">
-                <div class="col-md-5 col-lg-4 justify-content-center d-none d-md-block">
-                    <img src="instructions/images/gunship_banner_promo.jpg" width=100%>
+		<div class="col-md-5 col-lg-4 justify-content-center d-none d-md-block">
+			<?php 
+				$dir = 'instructions/images/banner_images/';
+				$banner_images = scandir($dir);
+				$display_image = banner_images[rand(0, (count($banner_images) - 1)];
+				$output = "<img src='" . $dir . $display_image . "' width=100%>";
+				echo $output;
+			?>
                     <img src="instructions/images/rebellug-instructions-store-logo.png" style="position: absolute; width: 80%; left: 10%; top: 15px;">
                 </div>
                 <div class="col-md-7 col-lg-8">
