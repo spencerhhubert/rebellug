@@ -1,3 +1,4 @@
 *.env
 pull.php
 pull.sh
+.DS_Store
