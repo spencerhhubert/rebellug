@@ -11,12 +11,12 @@ function printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $
                 <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>';
     if ($free !== 'true') {
         $output = $output . '
-                <p><b>$' . $price . ' USD</b></p>
-                <div style="position: relative;">';
+                <p><b>$' . $price . ' USD</b></p>';
     }
 
     if ($isC4C == "true") {
         $output = $output . '
+            <div style="position: relative;">
             <div class="c4c">
                 <img src="/instructions/images/creations_for_charity_logo_small.png" class="c4c">
         ';
