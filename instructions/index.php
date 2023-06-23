@@ -1,6 +1,6 @@
 <?php
 
-function printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $isC4C, $C4CPercent) {
+function printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $isC4C, $C4CPercent, $free) {
     $output = "";
     $output = $output . '
         <div class="col-md-4 col-md">
@@ -8,9 +8,12 @@ function printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $
                 <a href="/instructions/' . slugify($title) . '">
                     <h3>' . $title . '</h3>
                 </a>
-                <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>
+                <p>' . memberName($builder_id) . ' - ' . memberHandle($builder_id) . '</p>';
+    if ($free !== 'true') {
+        $output = $output . '
                 <p><b>$' . $price . ' USD</b></p>
                 <div style="position: relative;">';
+    }
 
     if ($isC4C == "true") {
         $output = $output . '
@@ -74,7 +77,8 @@ include SITE_ROOT . "/includes/header.php";
                             $thumbnail = $row['thumbnail'];
                             $isC4C = 'false';
                             $C4CPercent = $row['C4CPercent'];
-                            printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $isC4C, $C4CPercent);
+                            $free = $row['free'];
+                            printInstructionsModule($id, $title, $builder_id, $price, $thumbnail, $isC4C, $C4CPercent, $free);
                         }
                     } else {
                         echo "There was an error loading the instructions";
