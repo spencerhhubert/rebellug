@@ -56,6 +56,7 @@ include SITE_ROOT . "/includes/header.php";
                 );
                 $isC4C = 'false';
                 $C4CPercent = $row['C4CPercent'];
+                $free = $row['free'];
 
     
                 $numOfPics = 0;
@@ -128,24 +129,27 @@ include SITE_ROOT . "/includes/header.php";
                 }
 
                 print_r('<p style="margin-top: 15px;">' . $description . '</p>');
-    
-                print_r('
-                <div class="row justify-content-center" style="margin-bottom: 25px;">
-                    <div class="col-auto">
-                        <div class="row justify-content-center">
-                            <div class="col-auto">
-                                <h3 style="font-size: 2em;" class="header">$' . $price . '</h3>
+
+
+                if ($free !== "true") {
+                    print_r('
+                    <div class="row justify-content-center" style="margin-bottom: 25px;">
+                        <div class="col-auto">
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <h3 style="font-size: 2em;" class="header">$' . $price . '</h3>
+                                </div>
                             </div>
-                        </div>
-    
-                        <div class="row justify-content-center">
-                            <div class="col-auto">
-                                <a href="' . $paypal_link . '"><img src="/images/buy_with_paypal_button.png" alt="Buy now with PayPal" width=250px></a>
+        
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <a href="' . $paypal_link . '"><img src="/images/buy_with_paypal_button.png" alt="Buy now with PayPal" width=250px></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                ');
+                    ');
+                }
 
                 echo '
                 <p>The XML parts list is available <a href="parts/' . $xml_parts_list . '">here</a>. Here is our <a href="https://www.youtube.com/watch?v=nZHHhrKHXPA">video tutorial</a> to import the XML parts list to <a href="https://www.bricklink.com/">Bricklink</a>.</p>
