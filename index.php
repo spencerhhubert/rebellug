@@ -14,17 +14,29 @@ include SITE_ROOT . "/includes/header.php"
         </ol>
 
         <div class="carousel-inner group-shot">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="/images/groupshots/bw2019full.JPG" alt="First slide">
+            /* <div class="carousel-item active"> */
+            /*     <img class="d-block w-100" src="/images/groupshots/bw2019full.JPG" alt="First slide"> */
+            /* </div> */
+            /* <div class="carousel-item"> */
+            /*     <img class="d-block w-100" src="/images/groupshots/bw2018full.JPG" alt="Second slide"> */
+            /* </div> */
+            /* <div class="carousel-item"> */
+            /*     <img class="d-block w-100" src="/images/groupshots/bb2017.jpg" alt="Third slide"> */
+            /* </div> */
+            /* <div class="carousel-item"> */
+            /*     <img class="d-block w-100" src="/images/groupshots/bw2017.jpg" alt="Fourth slide"> */
+            /* </div> */
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/images/groupshots/just_rl_2023_bw_group.jpg">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/images/groupshots/bw2018full.JPG" alt="Second slide">
+                <img class="d-block w-100" src="/images/groupshots/kloss_2022.jpg">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/images/groupshots/bb2017.jpg" alt="Third slide">
+                <img class="d-block w-100" src="/images/groupshots/bricktastic_2023.jpg">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/images/groupshots/bw2017.jpg" alt="Fourth slide">
+                <img class="d-block w-100" src="/images/groupshots/bricking_baveria_2021.jpg">
             </div>
         </div>
 
