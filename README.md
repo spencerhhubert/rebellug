@@ -11,3 +11,8 @@ This is the [RebelLUG](https://rebellug.com) website, a LEGO User Group I co-fou
 - finish update members
 - update the collabs
     - the way those are implemented is a mess lol. collab meta data references the db, the code is barebones. it's like database driven development!
+- longer term:
+    - redo this entire mess. baller move: sveltekit and (some backend). safe move: custom wordpress.
+    - drop fetchapp and do all the instructions store stuff on our own backend. needs to send emails and distribute money to members automatically.
+    - deploy on cloudflare pages
+        - infinite profit %!
