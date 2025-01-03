@@ -24,11 +24,11 @@
                 <div class="col-12 row">
                     <div class="col-4 d-flex align-items-center item"><h3>Merch</h3></div>
                     <div class="col-12  d-flex align-items-center item">
-                        <a href="https://teespring.com/stores/rebellug-merch" target="_blank">
+                        <a href="https://rebellug.myspreadshop.com/" target="_blank">
                             <i class="fas fa-tshirt align-middle" aria-hidden="true"></i>
                         </a>
-                        <a href="https://teespring.com/stores/rebellug-merch" target="_blank">
-                            <p class="align-middle">Official Teespring</p>
+                        <a href="https://rebellug.myspreadshop.com/" target="_blank">
+                            <p class="align-middle">Offical MySpreadshop</p>
                         </a>
                     </div>
                 </div>
